@@ -126,9 +126,13 @@ async function main() {
       if (!res.ok) throw new Error(`feed HTTP ${res.status}`);
       const feed = parseFeed(await res.text());
 
-      // Channel baseline: views/day across everything in its feed (last ~15 uploads).
-      const vpd = (v) => v.views / Math.max((now - Date.parse(v.published)) / 864e5, 0.25);
-      const baseline = median(feed.filter((v) => now - Date.parse(v.published) > 2 * 864e5).map(vpd)) || median(feed.map(vpd)) || 1;
+      // Channel baseline: typical total views of its uploads that are at least a week old.
+      // A younger video is compared with the share of that total it "should" have by now
+      // (views pile up fast at first, then flatten, roughly like sqrt(age / 7 days)).
+      const ageDays = (v) => (now - Date.parse(v.published)) / 864e5;
+      const mature = feed.filter((v) => ageDays(v) >= 7);
+      const typicalViews = median((mature.length >= 3 ? mature : feed).map((v) => v.views)) || 1;
+      const expectedViews = (v) => typicalViews * Math.min(1, Math.sqrt(Math.max(ageDays(v), 0.1) / 7));
       const likeBaseline = median(feed.filter((v) => v.views > 0).map((v) => v.likes / v.views)) || 0.03;
 
       let kept = 0;
@@ -137,7 +141,7 @@ async function main() {
         if (!(t >= cutoff) || !isAboutAI(v)) continue;
 
         const ageHours = (now - t) / 36e5;
-        const relPerf = vpd(v) / baseline;
+        const relPerf = v.views / expectedViews(v);
         const likeRate = v.views ? v.likes / v.views : 0;
         const relLikes = likeRate / likeBaseline;
         const judged = ageHours >= TOO_NEW_TO_JUDGE_HOURS;
@@ -148,7 +152,7 @@ async function main() {
         const perfPart = Math.min(Math.log2(1 + relPerf) / Math.log2(4), 1);
         const likePart = Math.min(relLikes / 1.5, 1);
         const freshPart = Math.max(0, 1 - ageHours / (MAX_AGE_DAYS * 24));
-        const score = Math.round(100 * (0.6 * perfPart + 0.25 * likePart + 0.15 * freshPart)) + (ch.favorite ? 10 : 0);
+        const score = Math.min(100, Math.round(100 * (0.6 * perfPart + 0.25 * likePart + 0.15 * freshPart)) + (ch.favorite ? 5 : 0));
 
         videos.push({
           id: v.id,

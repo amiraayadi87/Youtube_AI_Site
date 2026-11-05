@@ -9,8 +9,8 @@ A personal YouTube page that shows only **recent, good-quality AI videos** from 
   1. was uploaded in the last 14 days,
   2. is about AI (title and description are checked against an AI keyword list),
   3. is not a Short,
-  4. is holding its own against that channel's other recent uploads (views per day compared with the channel's median). Videos under 36 hours old get a pass because it's too early to judge them.
-- Each video gets a quality score (0–100): 60% performance against its own channel, 25% like rate, 15% freshness. Videos getting more than 1.5× their channel's usual views per day are tagged **Outperforming**.
+  4. is holding its own against that channel's other uploads: its views are compared with what the channel's videos typically have at the same age. Videos under 36 hours old get a pass because it's too early to judge them.
+- Each video gets a quality score (0–100): 60% performance against its own channel, 25% like rate, 15% freshness. Videos with more than 1.5× the views the channel's videos usually have at that age are tagged **Outperforming**.
 - The result is saved to `data/videos.json` and the site is published with GitHub Pages.
 
 ## Using the site

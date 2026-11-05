@@ -15,6 +15,6 @@
     { "handle": "GregIsenberg", "name": "Greg Isenberg", "note": "AI startup ideas and builder interviews" },
     { "handle": "anthropic-ai", "name": "Anthropic", "note": "Official Claude updates" },
     { "handle": "OpenAI", "name": "OpenAI", "note": "Official launches" },
-    { "handle": "Google_DeepMind", "name": "Google DeepMind", "note": "Official research and launches" }
+    { "handle": "googledeepmind", "name": "Google DeepMind", "note": "Official research and launches" }
   ]
 }
