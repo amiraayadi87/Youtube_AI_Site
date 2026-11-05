@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T23:07:25.549Z",
+  "updated": "2026-11-05T23:11:15.362Z",
   "maxAgeDays": 14,
   "videos": [
     {
@@ -11,8 +11,8 @@
       "channelHandle": "samwitteveenai",
       "favorite": false,
       "published": "2026-11-03T14:30:33+00:00",
-      "views": 123142,
-      "likes": 1819,
+      "views": 123339,
+      "likes": 1820,
       "description": "In this video, I look at the new announcement about the DeepSeek harness and the introduction of their super agent add-on for their harness. \n\nGH: https://github.com/deepseek-ai/dsh-superagent-prototype\nX post: https://x.com/DeepSeekHarness/status/2116857257245987236\n\n2nd Channel",
       "score": 91,
       "outperforming": true,
@@ -45,12 +45,12 @@
       "channelHandle": "aiDotEngineer",
       "favorite": false,
       "published": "2026-11-03T10:00:09+00:00",
-      "views": 121192,
-      "likes": 872,
+      "views": 121294,
+      "likes": 874,
       "description": "Graph engineering is a new name for an old idea: give agents a map of the logic they should follow, not just a pile of text. Zachary Blumenfeld of Neo4j explains how graphs make agents more predictable, governable and portable. He shows how to compile skills and past decision tra",
       "score": 90,
       "outperforming": true,
-      "relPerf": 39.27,
+      "relPerf": 39.26,
       "why": ""
     },
     {
@@ -96,7 +96,7 @@
       "channelHandle": "aiDotEngineer",
       "favorite": false,
       "published": "2026-11-05T09:00:12+00:00",
-      "views": 4156,
+      "views": 4182,
       "likes": 23,
       "description": "Milind Sunil Shah of Brainbase Labs walks through a six-step framework for improving back-office agents, using a Domino's project that tracks competitors' pizza prices across websites and delivery apps. From version 1 to version 11, accuracy went from 41% to 97%, cost per source ",
       "score": 86,
@@ -152,7 +152,7 @@
       "description": "NatWest lead AI engineer Jonathan Osborne shares how the UK's second-largest retail bank, with 19 million customers and about 100,000 assistant conversations a day, is moving its digital assistant Cora from scripted answers to AI agents. Building the agent was the easy part; prov",
       "score": 79,
       "outperforming": true,
-      "relPerf": 1.98,
+      "relPerf": 1.97,
       "why": ""
     },
     {
@@ -356,7 +356,7 @@
       "description": "Agents can't keep borrowing your identity and running on someone else's machines, especially at banks and other heavily regulated companies. Nikhil Harithas of Factory shows how they rebuilt their coding agent, Droid, to run on any compute inside a customer's own cloud. He covers",
       "score": 61,
       "outperforming": true,
-      "relPerf": 1.65,
+      "relPerf": 1.64,
       "why": ""
     },
     {
@@ -385,12 +385,12 @@
       "channelHandle": "sequoiacapital",
       "favorite": false,
       "published": "2026-11-05T13:00:07+00:00",
-      "views": 3300,
+      "views": 3441,
       "likes": 28,
       "description": "Today’s agents are stuck in what Ronak Malde calls “pseudo continual learning”: intelligent, but updated in offline batches, like a paper road map you can’t reroute mid-trip. Ronak, co-founder of Trajectory, explains why closing that loop is the next learning paradigm, and why tr",
       "score": 60,
       "outperforming": false,
-      "relPerf": 0.61,
+      "relPerf": 0.62,
       "why": ""
     },
     {
@@ -402,7 +402,7 @@
       "channelHandle": "aiDotEngineer",
       "favorite": false,
       "published": "2026-11-04T09:00:20+00:00",
-      "views": 3821,
+      "views": 3830,
       "likes": 8,
       "description": "Datasite global CTO Raj Bakhru talks with Reducto co-founder and CEO Adit Abraham about leading AI at a platform that handles about 60% of deals over $100 million. Raj shares how his startup BlueFlame was acquired into Datasite, why parsing billions of pages of deal documents is ",
       "score": 59,
@@ -436,12 +436,12 @@
       "channelHandle": "aiDotEngineer",
       "favorite": false,
       "published": "2026-11-05T21:00:16+00:00",
-      "views": 196,
+      "views": 246,
       "likes": 7,
       "description": "Kim Maida of Keycard and Mason Egger of Temporal show how to build AI agents that are both secure and reliable. Kim replaces shared API keys with OAuth token exchange, so every tool call gets a short-lived token scoped to that one call and tied to both the agent's identity and th",
-      "score": 52,
+      "score": 55,
       "outperforming": false,
-      "relPerf": 0.32,
+      "relPerf": 0.4,
       "why": ""
     },
     {
@@ -538,7 +538,7 @@
       "channelHandle": "rileybrownai",
       "favorite": false,
       "published": "2026-10-23T20:50:23+00:00",
-      "views": 130787,
+      "views": 130791,
       "likes": 869,
       "description": "Sponsored by Bluehost. Start building and running your own AI agents: https://www.bluehost.com/ai-gateway?utm_source=influencer&utm_medium=youtube&utm_campaign=jev&utm_content=Riley_Brown&channelid=P99C46097236S651N0B3003A151D115E0000V106\n\nI’ve spent around 10 hours using Claude ",
       "score": 41,
