@@ -124,7 +124,11 @@ async function main() {
 
       const res = await get(`https://www.youtube.com/feeds/videos.xml?channel_id=${channelId}`);
       if (!res.ok) throw new Error(`feed HTTP ${res.status}`);
-      const feed = parseFeed(await res.text());
+      // Drop Shorts before anything else: they get very different view counts and would
+      // drag the channel baseline down, making every normal video look like a breakout.
+      const all = parseFeed(await res.text());
+      const shortFlags = await Promise.all(all.map(isShort));
+      const feed = all.filter((_, i) => !shortFlags[i]);
 
       // Channel baseline: typical total views of its uploads that are at least a week old.
       // A younger video is compared with the share of that total it "should" have by now
@@ -146,7 +150,6 @@ async function main() {
         const relLikes = likeRate / likeBaseline;
         const judged = ageHours >= TOO_NEW_TO_JUDGE_HOURS;
         if (!ch.favorite && judged && relPerf < MIN_RELATIVE_PERF) continue;
-        if (await isShort(v)) continue;
 
         // Quality score 0-100: outperformance vs channel (60%), engagement vs channel (25%), freshness (15%).
         const perfPart = Math.min(Math.log2(1 + relPerf) / Math.log2(4), 1);
@@ -172,7 +175,7 @@ async function main() {
         });
         kept++;
       }
-      report.push(`ok   ${ch.name.padEnd(20)} ${String(feed.length).padStart(2)} in feed, ${kept} kept`);
+      report.push(`ok   ${ch.name.padEnd(20)} ${String(all.length).padStart(2)} in feed, ${String(all.length - feed.length).padStart(2)} shorts, ${kept} kept`);
     } catch (err) {
       report.push(`FAIL ${ch.name.padEnd(20)} ${err.message}`);
     }
