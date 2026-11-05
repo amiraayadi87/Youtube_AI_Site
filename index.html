@@ -185,14 +185,9 @@ function render() {
   );
   list.sort(state.sort === "new" ? (a, b) => Date.parse(b.published) - Date.parse(a.published) : (a, b) => b.score - a.score);
 
-  let html;
-  if (state.channel === "all") {
-    const favs = list.filter((v) => v.favorite);
-    const rest = list.filter((v) => !v.favorite);
-    html = section("★ From your favourites", favs) + section(state.sort === "new" ? "Latest" : "Top picks", rest);
-  } else {
-    html = section(state.channel === "all" ? "" : (list[0]?.channel || "Videos"), list);
-  }
+  const html = state.channel === "all"
+    ? section(state.sort === "new" ? "Latest" : "Top picks", list)
+    : section(list[0]?.channel || "Videos", list);
   $("#main").innerHTML = html || `<p class="empty">Nothing new here in the last ${state.days} days. Try a wider time window${state.hideWatched ? " or show watched videos" : ""}.</p>`;
 }
 

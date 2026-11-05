@@ -1,7 +1,13 @@
 {
-  "_comment": "Hand-picked AI channels. 'handle' is the @name from the channel URL. 'favorite: true' pins a channel to the top and skips the performance filter. Add or remove channels freely; the next scheduled run picks up changes.",
+  "_comment": "Hand-picked AI channels. 'handle' is the @name from the channel URL. 'favorite: true' gets a small score boost, a star, and skips the performance filter. Add or remove channels freely; the next scheduled run picks up changes.",
   "channels": [
     { "handle": "nicksaraev", "name": "Nick Saraev", "favorite": true, "note": "AI automation, agents, n8n, building AI businesses" },
+    { "handle": "TechWithTim", "name": "Tech With Tim", "favorite": true, "note": "Python and AI coding tutorials, building AI apps and agents" },
+    { "handle": "nateherk", "name": "Nate Herk", "note": "AI automation and agents with n8n (similar to Nick)" },
+    { "handle": "daveebbelaar", "name": "Dave Ebbelaar", "note": "Practical AI engineering in Python (similar to Tim)" },
+    { "handle": "leonvanzyl", "name": "Leon van Zyl", "note": "Hands-on AI agent and app builds" },
+    { "handle": "AIJasonZ", "name": "AI Jason", "note": "Building AI agents and products, step by step" },
+    { "handle": "rileybrownai", "name": "Riley Brown", "note": "Building apps with AI coding tools" },
     { "handle": "aiexplained-official", "name": "AI Explained", "note": "Careful, research-driven model analysis" },
     { "handle": "TwoMinutePapers", "name": "Two Minute Papers", "note": "New AI research papers, explained" },
     { "handle": "AndrejKarpathy", "name": "Andrej Karpathy", "note": "Deep technical LLM lectures" },

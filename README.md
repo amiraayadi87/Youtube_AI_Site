@@ -1,10 +1,10 @@
 # AI Watchlist
 
-A personal YouTube page that shows only **recent, good-quality AI videos** from hand-picked channels, with Nick Saraev pinned at the top.
+A personal YouTube page that shows only **recent, good-quality AI videos** from hand-picked channels, with favourites (Nick Saraev, Tech With Tim) starred and boosted.
 
 ## How it works
 
-- `channels.json` lists the channels to follow. Channels marked `"favorite": true` get their own section at the top, and none of their AI videos are filtered out.
+- `channels.json` lists the channels to follow. Channels marked `"favorite": true` get a star and a small score boost, and none of their AI videos are filtered out.
 - Every 4 hours a GitHub Action (`.github/workflows/update.yml`) runs `scripts/fetch-videos.mjs`, which reads each channel's public YouTube RSS feed (no API key needed) and keeps a video only if it:
   1. was uploaded in the last 14 days,
   2. is about AI (title and description are checked against an AI keyword list),
