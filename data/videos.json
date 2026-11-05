@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T22:08:24.890Z",
+  "updated": "2026-11-05T22:43:03.167Z",
   "maxAgeDays": 14,
   "videos": [
     {
@@ -27,8 +27,8 @@
       "channelHandle": "samwitteveenai",
       "favorite": false,
       "published": "2026-11-05T16:01:13+00:00",
-      "views": 30548,
-      "likes": 662,
+      "views": 31993,
+      "likes": 692,
       "description": "In this video, I go through a new model that has come out from an interesting company that wasn't focused on making LLM models but is focused on creating models that can be used for chip design. \n\nBlog: https://www.ricursive.com/ripple\nHF: https://huggingface.co/ricursiveAI\n\n2nd ",
       "score": 100,
       "outperforming": false,
@@ -43,12 +43,12 @@
       "channelHandle": "OpenAI",
       "favorite": false,
       "published": "2026-11-05T02:32:21+00:00",
-      "views": 91996,
-      "likes": 1982,
+      "views": 93028,
+      "likes": 1992,
       "description": "Images, upgraded—introducing ChatGPT Images 2.6.\n\nNow with GIFs and reference images.\n\nPlus, two new models are coming to the API with 50% faster image generation.\n\nImages, upgraded—introducing ChatGPT Images 2.6.\n\nNow with GIFs and reference images.\n\nPlus, two new models are com",
       "score": 99,
       "outperforming": false,
-      "relPerf": 6.5
+      "relPerf": 6.45
     },
     {
       "id": "v5FYtD1hy6w",
@@ -91,8 +91,8 @@
       "channelHandle": "OpenAI",
       "favorite": false,
       "published": "2026-11-04T23:42:40+00:00",
-      "views": 225715,
-      "likes": 3663,
+      "views": 229676,
+      "likes": 3714,
       "description": "We’re bringing GPT-Image-2.6 to Codex and the API. In the API, the 2.6 versions of Flare and Sunburst generate images 50% faster than before.\n\nUse Flare for a quick first pass on a poster or product shot. At low image quality, it can generate an image in as little as six seconds.",
       "score": 93,
       "outperforming": false,
@@ -123,12 +123,12 @@
       "channelHandle": "leonvanzyl",
       "favorite": false,
       "published": "2026-11-05T12:00:00+00:00",
-      "views": 1837,
-      "likes": 27,
+      "views": 1904,
+      "likes": 28,
       "description": "⚡ See where your AI skills stand with TripleTen's 3-minute skills audit. This video is sponsored by TripleTen (Nebius Group).\nAI Systems Engineering program: https://special.tripleten.com/systems-engineer-audit/?utm_source=youtube&utm_medium=video&utm_campaign=leonvanzyl\nAI and M",
       "score": 91,
       "outperforming": false,
-      "relPerf": 4.07
+      "relPerf": 3.96
     },
     {
       "id": "OrcsMi2-IcM",
@@ -139,12 +139,12 @@
       "channelHandle": "samwitteveenai",
       "favorite": false,
       "published": "2026-11-03T14:30:33+00:00",
-      "views": 122359,
-      "likes": 1808,
+      "views": 122805,
+      "likes": 1813,
       "description": "In this video, I look at the new announcement about the DeepSeek harness and the introduction of their super agent add-on for their harness. \n\nGH: https://github.com/deepseek-ai/dsh-superagent-prototype\nX post: https://x.com/DeepSeekHarness/status/2116857257245987236\n\n2nd Channel",
       "score": 91,
       "outperforming": true,
-      "relPerf": 5.58
+      "relPerf": 5.57
     },
     {
       "id": "NCxD-qsQcN0",
@@ -155,12 +155,12 @@
       "channelHandle": "OpenAI",
       "favorite": false,
       "published": "2026-11-03T18:30:30+00:00",
-      "views": 471428,
-      "likes": 6795,
+      "views": 474151,
+      "likes": 6822,
       "description": "You don't need to be an engineer to make hardware. Want to make something physical? Let GPT-6 Astra help you bring it to life.",
       "score": 90,
       "outperforming": true,
-      "relPerf": 20.53
+      "relPerf": 20.45
     },
     {
       "id": "r0cJOa9MZsE",
@@ -219,12 +219,12 @@
       "channelHandle": "samwitteveenai",
       "favorite": false,
       "published": "2026-11-02T13:00:00+00:00",
-      "views": 116735,
-      "likes": 1604,
+      "views": 117007,
+      "likes": 1607,
       "description": "In this video, I look at a research release from NVIDIA called Dory, which is a 4B looped transformer. \n\nHF: https://huggingface.co/collections/nvidia/nemotron-labs-dory\n\n2nd Channel:  https://www.youtube.com/channel/UCUF7WtR4JpVbQqcQGrLeADw\n\nTwitter: https://x.com/Sam_Witteveen ",
       "score": 88,
       "outperforming": true,
-      "relPerf": 4.41
+      "relPerf": 4.4
     },
     {
       "id": "63pcV4z0DwI",
@@ -235,12 +235,12 @@
       "channelHandle": "OpenAI",
       "favorite": false,
       "published": "2026-11-03T18:04:51+00:00",
-      "views": 64212,
-      "likes": 885,
+      "views": 64568,
+      "likes": 889,
       "description": "ChatGPT Voice 🤝 Finances.\n\nSecurely connect your accounts through Finances, then talk through your finances on topics like what subscriptions you're paying for, discuss which you’d like to keep and what you could save by cancelling. \n\nTry it: chatgpt.com/finances",
-      "score": 87,
+      "score": 86,
       "outperforming": true,
-      "relPerf": 2.79
+      "relPerf": 2.77
     },
     {
       "id": "gN6wl-OX8-Q",
@@ -299,8 +299,8 @@
       "channelHandle": "GregIsenberg",
       "favorite": false,
       "published": "2026-11-02T19:15:08+00:00",
-      "views": 128363,
-      "likes": 2346,
+      "views": 128685,
+      "likes": 2349,
       "description": "I sit down with Nick, co-founder of Orgo, to break down how to build a custom Grok Bot for a business and sell it for $25,000 up front with a $3,000-a-month retainer. Nick demos Bops, the agent platform he built in a 36-hour weekend, where each bot has its own phone number, email",
       "score": 75,
       "outperforming": true,
@@ -363,12 +363,12 @@
       "channelHandle": "OpenAI",
       "favorite": false,
       "published": "2026-11-05T17:14:11+00:00",
-      "views": 7636,
-      "likes": 173,
+      "views": 8397,
+      "likes": 178,
       "description": "Mozilla used GPT-6 Cyber to uncover previously unknown high-severity vulnerabilities in Firefox and identify architectural improvements. Its team shipped fixes to millions of users, turning findings into protections for the people who depend on the software.\n\nHear Brian Grinstead",
-      "score": 71,
+      "score": 72,
       "outperforming": false,
-      "relPerf": 1.08
+      "relPerf": 1.12
     },
     {
       "id": "fS-88gtHXIg",
@@ -379,8 +379,8 @@
       "channelHandle": "aiadvantage",
       "favorite": false,
       "published": "2026-11-04T22:20:46+00:00",
-      "views": 13382,
-      "likes": 256,
+      "views": 13585,
+      "likes": 258,
       "description": "Join The AI Advantage Club\nhttps://joinaiaclub.com/igor\n\nHere’s how we use ChatGPT and Claude Design to create the animations in my videos, from a transcript with timestamps to the final edit.\n\nClaude Design\nhttps://claude.ai/design\n\nChatGPT\nhttps://chatgpt.com/\n\nDropbox\nhttps://",
       "score": 70,
       "outperforming": false,
@@ -395,7 +395,7 @@
       "channelHandle": "samwitteveenai",
       "favorite": false,
       "published": "2026-10-23T13:00:20+00:00",
-      "views": 90203,
+      "views": 90237,
       "likes": 1254,
       "description": "In this video, I look at an interesting model from Recursive AI called Flint, which is their first public attempt at building a very fast mixture-of-experts model specifically for taking on the Qwen3.8 and similar coding models. They are using an RSI system to do this. \n\nBlog: ht",
       "score": 70,
@@ -427,8 +427,8 @@
       "channelHandle": "mreflow",
       "favorite": false,
       "published": "2026-11-04T16:40:16+00:00",
-      "views": 53991,
-      "likes": 1000,
+      "views": 54548,
+      "likes": 1008,
       "description": "Try vidIQ for only $1 https://vidiq.com/mattwolfe/\n\nLearn how to edit videos with Claude AI, work with Premiere Pro, and turn your footage into short-form content.\n\nIn this guide, I walk through how to use Claude to help with video editing, from working with your existing footage",
       "score": 69,
       "outperforming": false,
@@ -459,7 +459,7 @@
       "channelHandle": "mreflow",
       "favorite": false,
       "published": "2026-10-30T21:15:04+00:00",
-      "views": 126882,
+      "views": 126951,
       "likes": 2313,
       "description": "Check out Warp Factories here: http://warp.dev/mreflow\n\nThis week’s biggest AI news: OpenAI’s GPT-6.1 Terra brings faster computer use at a lower API cost, and Google’s Genie 4 brings real-time AI worlds to life. We’re also covering Gemini 4 Carbon, Kimi K3.1 Pro, and Anthropic’s",
       "score": 65,
@@ -491,8 +491,8 @@
       "channelHandle": "ColeMedin",
       "favorite": false,
       "published": "2026-11-02T21:06:17+00:00",
-      "views": 22753,
-      "likes": 275,
+      "views": 22854,
+      "likes": 276,
       "description": "My AI software factory ships hundreds of pull requests a week, and I really didn't want a control plane for it. I figured it would make things less autonomous and give me more to manage. It's turned out to be the only way I can keep up with all of it, so here's a tour of the miss",
       "score": 64,
       "outperforming": false,
@@ -507,8 +507,8 @@
       "channelHandle": "googledeepmind",
       "favorite": false,
       "published": "2026-10-27T16:00:41+00:00",
-      "views": 609123,
-      "likes": 11927,
+      "views": 609194,
+      "likes": 11929,
       "description": "Meet Genie 4, Google DeepMind’s most realistic and interactive world model yet. Built on our Gemini models, Genie 4 lets you step inside dynamic worlds in real time, steer scenes on the fly with natural language, and watch what happens next: how the world responds, how it sounds,",
       "score": 64,
       "outperforming": false,
@@ -539,12 +539,12 @@
       "channelHandle": "aiexplained-official",
       "favorite": false,
       "published": "2026-11-02T17:02:16+00:00",
-      "views": 127092,
-      "likes": 2200,
+      "views": 127171,
+      "likes": 2201,
       "description": "You know what, by AI standards, it might not have been the craziest week, but that doesn’t mean several headline-worthy things happened - from Altman and Anthropic implying they would release models they can’t control, with behavior they cannot verify, to Gemini 4 Carbon bursting",
       "score": 63,
       "outperforming": false,
-      "relPerf": 1.49
+      "relPerf": 1.48
     },
     {
       "id": "RYIV5E2Xq60",
@@ -555,12 +555,12 @@
       "channelHandle": "ColeMedin",
       "favorite": false,
       "published": "2026-11-05T01:00:05+00:00",
-      "views": 9732,
+      "views": 9817,
       "likes": 117,
       "description": "I really want open-weight models like Kimi K3.1 to be a real option for agentic engineering. They match Opus 5.5 and GPT-6 Astra on the benchmarks and work great for smaller tasks, but on long running agentic work they stop following instructions and fall apart.\n\nIn this video I ",
-      "score": 61,
+      "score": 60,
       "outperforming": false,
-      "relPerf": 1
+      "relPerf": 0.99
     },
     {
       "id": "dc3pgMqhRzI",
@@ -587,12 +587,12 @@
       "channelHandle": "samwitteveenai",
       "favorite": false,
       "published": "2026-11-04T14:00:23+00:00",
-      "views": 16438,
+      "views": 16473,
       "likes": 222,
       "description": "Do we still need IDEs?\n\nRecently JetBrains reached out to me to get my take on where I thought IDEs were going and what their role was in software development and agentic coding. They themselves have released an interesting blog post (which I refer to in the video) and are engagi",
       "score": 60,
       "outperforming": false,
-      "relPerf": 0.99
+      "relPerf": 0.98
     },
     {
       "id": "vMvkR8WEOpE",
@@ -619,7 +619,7 @@
       "channelHandle": "IndyDevDan",
       "favorite": false,
       "published": "2026-10-26T13:00:05+00:00",
-      "views": 63449,
+      "views": 63467,
       "likes": 1366,
       "description": "If your AI agent is already a better programmer inside the loop than you are on your best day, why are you still sitting in it? 🔥\n\n\n🎥 VIDEO REFERENCES\n• IA3 Phase 3 Early Sign Up: https://agenticengineer.com/ia3-pre-launch?y=52JX83rGPLc\n• Proactive Durable News Agent: https://y",
       "score": 57,
@@ -635,8 +635,8 @@
       "channelHandle": "aiadvantage",
       "favorite": false,
       "published": "2026-10-23T16:10:03+00:00",
-      "views": 46589,
-      "likes": 568,
+      "views": 46611,
+      "likes": 569,
       "description": "Join The AI Advantage Club\nhttps://joinaiaclub.com/igor\n\nHere’s my take on which AI agents are worth using, who I’d recommend each one to, and my three favorite ways to put them to work. Featuring Muse, Grok Bot, Dots, and a look at Claude Duet.\n\nChatGPT / Dots  \nhttps://chatgpt.",
       "score": 56,
       "outperforming": true,
@@ -683,8 +683,8 @@
       "channelHandle": "mreflow",
       "favorite": false,
       "published": "2026-10-28T19:25:38+00:00",
-      "views": 88038,
-      "likes": 1645,
+      "views": 88077,
+      "likes": 1646,
       "description": "What if you could automate your video editing, get a panel of AI experts to debate your ideas, and run your social media almost entirely on autopilot?\n\nI sat down with Nate Herk to explore three of his favorite AI workflows that he actually uses every day. He walks me through how",
       "score": 53,
       "outperforming": false,
@@ -715,7 +715,7 @@
       "channelHandle": "IndyDevDan",
       "favorite": false,
       "published": "2026-11-02T14:00:24+00:00",
-      "views": 30999,
+      "views": 31021,
       "likes": 507,
       "description": "What's up Engineers, here's a SNEAK PEEK of the upcoming Phase 3 Agentic Engineering Course: Tiny Software Factories\n\nPhase 3 PRESALE IS LIVE (What if your agents never stopped?)\nhttps://agenticengineer.com/infinite-agentic-engineering?y=1v7ldJiyH-Y\n\nToday you'll learn agentic en",
       "score": 52,
@@ -747,12 +747,12 @@
       "channelHandle": "GregIsenberg",
       "favorite": false,
       "published": "2026-11-04T20:30:20+00:00",
-      "views": 35807,
-      "likes": 383,
+      "views": 35963,
+      "likes": 386,
       "description": "In this solo episode, I lay out how I think about building an AI-proof business now that anyone can press a few buttons and spin up a company in seconds. Layoffs keep coming, people copy products pixel for pixel, and I still see more opportunity than ever. I walk through eight ca",
       "score": 51,
       "outperforming": false,
-      "relPerf": 0.73
+      "relPerf": 0.72
     },
     {
       "id": "HKNpCwG3nlc",
@@ -763,7 +763,7 @@
       "channelHandle": "GregIsenberg",
       "favorite": false,
       "published": "2026-10-26T18:35:28+00:00",
-      "views": 110217,
+      "views": 110272,
       "likes": 1700,
       "description": "Get Your Complete Financial OS at https://startup-ideas-pod.link/brex_SIP\n\nI sit down with James Dickerson, the Boring Marketer, who owns Diesel Dudes, a mobile diesel repair business in Charlotte, North Carolina, and spent years running agencies for local businesses. James shows",
       "score": 51,
@@ -864,7 +864,7 @@
       "description": "Join The AI Advantage Club\nhttps://joinaiaclub.com/igor\n\nCan’t find a file you saved? I’ll show you how DigUp searches for what you remember, using a saved video and our meeting notes.\n\nDownload DigUp\nhttps://github.com/ARahim3/DigUp/releases/latest\n\nChapters:\n0:00 Find Lost File",
       "score": 48,
       "outperforming": false,
-      "relPerf": 0.53
+      "relPerf": 0.52
     },
     {
       "id": "AqqjH_uv-_w",
@@ -875,8 +875,8 @@
       "channelHandle": "GregIsenberg",
       "favorite": false,
       "published": "2026-10-29T19:25:16+00:00",
-      "views": 70202,
-      "likes": 1096,
+      "views": 70227,
+      "likes": 1097,
       "description": "In this solo episode, I explain why I say SaaS is dead and what I see taking its place. For 15 years, SaaS meant paying engineers to build a tool and charging per seat, and now models like Opus 5.5, GPT-6, and Argon make the tool easy to build. I walk through what I call smart Sa",
       "score": 47,
       "outperforming": false,
@@ -907,12 +907,12 @@
       "channelHandle": "OpenAI",
       "favorite": false,
       "published": "2026-11-04T17:27:07+00:00",
-      "views": 12470,
-      "likes": 91,
+      "views": 12559,
+      "likes": 92,
       "description": "Marketers shouldn’t have to wait for a new dashboard to understand how a campaign is performing.\n\nIn an early pilot with OpenAI, Figma is building shared context that helps marketers ask how campaigns are landing and whether they’re converting customers. Teams can get useful insi",
       "score": 46,
       "outperforming": false,
-      "relPerf": 0.73
+      "relPerf": 0.72
     },
     {
       "id": "pryCaGv8wuo",
@@ -963,22 +963,6 @@
       "relPerf": 0.31
     },
     {
-      "id": "BlbxhsItZPg",
-      "title": "Anthropic's New Study: You're Not Controlling AI as Much as You Think You Are",
-      "url": "https://www.youtube.com/watch?v=BlbxhsItZPg",
-      "thumbnail": "https://i.ytimg.com/vi/BlbxhsItZPg/mqdefault.jpg",
-      "channel": "Cole Medin",
-      "channelHandle": "ColeMedin",
-      "favorite": false,
-      "published": "2026-10-31T16:51:47+00:00",
-      "views": 15201,
-      "likes": 140,
-      "description": "Open a Revolut Business account and get a $200 welcome bonus: https://get.revolut.com/Kjth/nn8ax572\n\nHow much control do you really have when AI helps you make decisions? Anthropic's new study shows how strongly an agent's recommendations can shape expert judgment, and it made me",
-      "score": 44,
-      "outperforming": false,
-      "relPerf": 0.64
-    },
-    {
       "id": "Amm9ySSET4c",
       "title": "Coinbase on OpenAI Private Intelligence",
       "url": "https://www.youtube.com/watch?v=Amm9ySSET4c",
@@ -1009,6 +993,22 @@
       "score": 43,
       "outperforming": false,
       "relPerf": 0.79
+    },
+    {
+      "id": "BlbxhsItZPg",
+      "title": "Anthropic's New Study: You're Not Controlling AI as Much as You Think You Are",
+      "url": "https://www.youtube.com/watch?v=BlbxhsItZPg",
+      "thumbnail": "https://i.ytimg.com/vi/BlbxhsItZPg/mqdefault.jpg",
+      "channel": "Cole Medin",
+      "channelHandle": "ColeMedin",
+      "favorite": false,
+      "published": "2026-10-31T16:51:47+00:00",
+      "views": 15201,
+      "likes": 140,
+      "description": "Open a Revolut Business account and get a $200 welcome bonus: https://get.revolut.com/Kjth/nn8ax572\n\nHow much control do you really have when AI helps you make decisions? Anthropic's new study shows how strongly an agent's recommendations can shape expert judgment, and it made me",
+      "score": 43,
+      "outperforming": false,
+      "relPerf": 0.64
     },
     {
       "id": "Lxkb4gd041I",
@@ -1067,7 +1067,7 @@
       "channelHandle": "samwitteveenai",
       "favorite": false,
       "published": "2026-10-26T13:30:16+00:00",
-      "views": 14370,
+      "views": 14371,
       "likes": 272,
       "description": "In this video I look at MOSS Image. A 5B diffusion transformer, which has an Apache 2 license, allowing you to create images and do whatever you want with it. It also allows you to use JSON to layout the image\n\nBlog: https://openmoss.ai/MOSS-Image/\nHF: https://huggingface.co/Open",
       "score": 41,
@@ -1088,7 +1088,7 @@
       "description": "Using more capable AI starts with confidence that your data stays under your control. For Glean’s customers, privacy is a priority.\n\nGlean co-founder and CTO Vishwanath T R shares how Glean and OpenAI have worked together to help meet those needs, including through the Private Sa",
       "score": 39,
       "outperforming": false,
-      "relPerf": 0.51
+      "relPerf": 0.5
     },
     {
       "id": "st61aKW8P5A",
@@ -1099,7 +1099,7 @@
       "channelHandle": "GregIsenberg",
       "favorite": false,
       "published": "2026-10-28T17:40:18+00:00",
-      "views": 66744,
+      "views": 66757,
       "likes": 678,
       "description": "I sit down with Jon Noronha, co-founder and chief product officer of Gamma, to break down agent harnesses and the startup openings around them. Jon explains how Gamma rebuilt its product as a creative agent this year and walks me through the roughly 20 models and 200 calls behind",
       "score": 38,
@@ -1120,7 +1120,7 @@
       "description": "Qodo’s Codex plugin brings company context, codebase standards, and independent review into the development workflow. It helps developers catch bugs across repositories, where a change can look right in one codebase and break a service in another.\n\nIn Behind the Build, co-founder",
       "score": 38,
       "outperforming": false,
-      "relPerf": 0.53
+      "relPerf": 0.52
     }
   ]
 }
