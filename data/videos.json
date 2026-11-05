@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T22:45:45.490Z",
+  "updated": "2026-11-05T22:46:49.263Z",
   "maxAgeDays": 14,
   "videos": [
     {
@@ -155,7 +155,7 @@
       "channelHandle": "leonvanzyl",
       "favorite": false,
       "published": "2026-11-05T12:00:00+00:00",
-      "views": 1930,
+      "views": 1943,
       "likes": 28,
       "description": "⚡ See where your AI skills stand with TripleTen's 3-minute skills audit. This video is sponsored by TripleTen (Nebius Group).\nAI Systems Engineering program: https://special.tripleten.com/systems-engineer-audit/?utm_source=youtube&utm_medium=video&utm_campaign=leonvanzyl\nAI and M",
       "score": 91,
@@ -899,6 +899,22 @@
       "relPerf": 1.12
     },
     {
+      "id": "-YMMRQ1qscI",
+      "title": "Amazon CEO Andy Jassy on Reinventing Amazon for the AI Era",
+      "url": "https://www.youtube.com/watch?v=-YMMRQ1qscI",
+      "thumbnail": "https://i.ytimg.com/vi/-YMMRQ1qscI/mqdefault.jpg",
+      "channel": "a16z",
+      "channelHandle": "a16z",
+      "favorite": false,
+      "published": "2026-10-23T15:40:03+00:00",
+      "views": 154873,
+      "likes": 0,
+      "description": "Amazon expects to spend roughly $220 billion in CapEx in 2026, yet CEO Andy Jassy says the company is still leaving meaningful AI demand on the table. He believes the buildout could ultimately help make AWS a $1 trillion annual run-rate business.\n\nAndy joins a16z co-founder Ben H",
+      "score": 58,
+      "outperforming": true,
+      "relPerf": 2.79
+    },
+    {
       "id": "52JX83rGPLc",
       "title": "ELITE Agentic Engineers Are LEAVING THE LOOP... Here’s why",
       "url": "https://www.youtube.com/watch?v=52JX83rGPLc",
@@ -1251,6 +1267,22 @@
       "relPerf": 0.16
     },
     {
+      "id": "5UWDUD6qaM4",
+      "title": "Mark Cuban on Why AI Could Turn Solo Founders Into Trillionaires",
+      "url": "https://www.youtube.com/watch?v=5UWDUD6qaM4",
+      "thumbnail": "https://i.ytimg.com/vi/5UWDUD6qaM4/mqdefault.jpg",
+      "channel": "a16z",
+      "channelHandle": "a16z",
+      "favorite": false,
+      "published": "2026-10-28T14:30:15+00:00",
+      "views": 83482,
+      "likes": 0,
+      "description": "Mark Cuban thinks AI could transform healthcare, but it won’t fix opaque prices and broken incentives on its own. His starting point for employers: run every benefits contract through AI and ask where you’re getting ripped off.\n\nMark joins a16z General Partner Julie Yoo and Erik ",
+      "score": 46,
+      "outperforming": true,
+      "relPerf": 1.5
+    },
+    {
       "id": "pryCaGv8wuo",
       "title": "DeepSeek's New AI Is An Absolute Monster",
       "url": "https://www.youtube.com/watch?v=pryCaGv8wuo",
@@ -1441,6 +1473,54 @@
       "score": 38,
       "outperforming": false,
       "relPerf": 0.52
+    },
+    {
+      "id": "dSiTwPl0t1U",
+      "title": "The New AI Agents That Shop, Plan, and Gossip",
+      "url": "https://www.youtube.com/watch?v=dSiTwPl0t1U",
+      "thumbnail": "https://i.ytimg.com/vi/dSiTwPl0t1U/mqdefault.jpg",
+      "channel": "a16z",
+      "channelHandle": "a16z",
+      "favorite": false,
+      "published": "2026-11-04T15:30:22+00:00",
+      "views": 9492,
+      "likes": 0,
+      "description": "Will we have one AI assistant that does everything, or an entire network of agents that know different parts of our lives? David Pawlan, creator of Assistant Benchmark, returns with Anish Acharya and Josh Elman to take stock of how quickly the agent landscape has changed.\n\nDavid ",
+      "score": 28,
+      "outperforming": false,
+      "relPerf": 0.4
+    },
+    {
+      "id": "cRJ7CfaK1Vc",
+      "title": "How to Build the Next SpaceX or Tesla",
+      "url": "https://www.youtube.com/watch?v=cRJ7CfaK1Vc",
+      "thumbnail": "https://i.ytimg.com/vi/cRJ7CfaK1Vc/mqdefault.jpg",
+      "channel": "a16z",
+      "channelHandle": "a16z",
+      "favorite": false,
+      "published": "2026-10-29T13:50:32+00:00",
+      "views": 27506,
+      "likes": 0,
+      "description": "America’s defense, energy, manufacturing, and robotics booms are increasingly becoming one story: the rebuilding of the country’s industrial base. This year’s AD50 highlights the companies building across that stack, from critical materials and factories to the systems they ultim",
+      "score": 25,
+      "outperforming": false,
+      "relPerf": 0.5
+    },
+    {
+      "id": "9iAQdKxyiQc",
+      "title": "How AI Is Turning Figma’s Finance Team Into Builders",
+      "url": "https://www.youtube.com/watch?v=9iAQdKxyiQc",
+      "thumbnail": "https://i.ytimg.com/vi/9iAQdKxyiQc/mqdefault.jpg",
+      "channel": "a16z",
+      "channelHandle": "a16z",
+      "favorite": false,
+      "published": "2026-11-05T15:30:39+00:00",
+      "views": 2801,
+      "likes": 0,
+      "description": "AI is moving finance from reconciling what happened last month to helping decide what the business should do next. Figma CFO Praveer Melwani argues that the best finance teams are becoming builders themselves, automating repetitive work so they can spend more time understanding c",
+      "score": 24,
+      "outperforming": false,
+      "relPerf": 0.24
     }
   ]
 }
