@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AI Watchlist</title>
+<link rel="icon" type="image/svg+xml" href="logo.svg">
 <meta name="description" content="New, good-quality AI videos from hand-picked YouTube channels.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +29,8 @@
   body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.5 Inter, system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
   .wrap { max-width: 1240px; margin: 0 auto; padding: 0 16px; }
   header { padding: 40px 0 20px; display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px; }
-  h1 { font: 400 clamp(40px, 7vw, 64px)/1 "Instrument Serif", Georgia, serif; margin: 0; letter-spacing: -.01em; }
+  h1 { font: 400 clamp(40px, 7vw, 64px)/1 "Instrument Serif", Georgia, serif; margin: 0; letter-spacing: -.01em; display: flex; align-items: center; gap: .25em; }
+  h1 .logo { width: .9em; height: .9em; flex: none; }
   h1 em { color: var(--accent); font-style: italic; }
   .sub { color: var(--muted); margin: 8px 0 0; }
   .updated { color: var(--muted); font-size: 13px; }
@@ -87,7 +89,7 @@
 <div class="wrap">
   <header>
     <div>
-      <h1>AI <em>Watchlist</em></h1>
+      <h1><img class="logo" src="logo.svg" alt="">AI <em>Watchlist</em></h1>
       <p class="sub">New AI videos worth your time, from channels you trust.</p>
     </div>
     <div class="updated" id="updated">Loading…</div>

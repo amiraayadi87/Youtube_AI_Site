@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="AI Watchlist">
+  <rect x="2" y="8" width="54" height="50" rx="14" fill="#e8452c"/>
+  <path d="M23 21.5v23a2 2 0 0 0 3 1.7l19-11.5a2 2 0 0 0 0-3.4l-19-11.5a2 2 0 0 0-3 1.7z" fill="#fff"/>
+  <path d="M52 0c1.2 6.4 4.6 9.8 11 11-6.4 1.2-9.8 4.6-11 11-1.2-6.4-4.6-9.8-11-11 6.4-1.2 9.8-4.6 11-11z" fill="#f2b705" stroke="#fff" stroke-width="2.5" stroke-linejoin="round" paint-order="stroke"/>
+</svg>
