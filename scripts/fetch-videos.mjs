@@ -117,12 +117,23 @@ async function main() {
   const videos = [];
   const report = [];
 
+  // Last run's videos: if a channel's feed fails this time, keep what we had for it
+  // so one bad run can't empty the site.
+  let previous = [];
+  try { previous = JSON.parse(await readFile(path.join(ROOT, "data", "videos.json"), "utf8")).videos || []; } catch {}
+
   for (const ch of channels) {
     try {
       const channelId = ch.channelId || idCache[ch.handle] || (await resolveChannelId(ch.handle));
       idCache[ch.handle] = channelId;
 
-      const res = await get(`https://www.youtube.com/feeds/videos.xml?channel_id=${channelId}`);
+      // YouTube sometimes answers 404/429 to cloud IPs (e.g. GitHub runners) for a while; retry with backoff.
+      let res;
+      for (let attempt = 1; attempt <= 3; attempt++) {
+        res = await get(`https://www.youtube.com/feeds/videos.xml?channel_id=${channelId}`);
+        if (res.ok || ![404, 429].includes(res.status) || attempt === 3) break;
+        await new Promise((r) => setTimeout(r, 2000 * attempt));
+      }
       if (!res.ok) throw new Error(`feed HTTP ${res.status}`);
       // Drop Shorts before anything else: they get very different view counts and would
       // drag the channel baseline down, making every normal video look like a breakout.
@@ -177,7 +188,9 @@ async function main() {
       }
       report.push(`ok   ${ch.name.padEnd(20)} ${String(all.length).padStart(2)} in feed, ${String(all.length - feed.length).padStart(2)} shorts, ${kept} kept`);
     } catch (err) {
-      report.push(`FAIL ${ch.name.padEnd(20)} ${err.message}`);
+      const kept = previous.filter((v) => v.channelHandle === ch.handle && Date.parse(v.published) >= cutoff);
+      videos.push(...kept);
+      report.push(`FAIL ${ch.name.padEnd(20)} ${err.message} (kept ${kept.length} from last run)`);
     }
   }
 
