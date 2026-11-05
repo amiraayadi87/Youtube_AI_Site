@@ -1,5 +1,5 @@
 {
-  "_comment": "Hand-picked AI channels. 'handle' is the @name from the channel URL. 'favorite: true' gets a small score boost, a star, and skips the performance filter. Add or remove channels freely; the next scheduled run picks up changes.",
+  "_comment": "Channels to pull from. Every video still has to pass the 'useful for an AI product builder' check. 'favorite: true' gives a small score boost and skips the view-count filter (no star is shown).",
   "channels": [
     { "handle": "nicksaraev", "name": "Nick Saraev", "favorite": true, "note": "AI automation, agents, n8n, building AI businesses" },
     { "handle": "TechWithTim", "name": "Tech With Tim", "favorite": true, "note": "Python and AI coding tutorials, building AI apps and agents" },
@@ -25,6 +25,11 @@
     { "handle": "ycombinator", "name": "Y Combinator", "note": "Startup School and AI Startup School talks" },
     { "handle": "aiDotEngineer", "name": "AI Engineer", "note": "AI Engineer World's Fair and Summit talks" },
     { "handle": "sequoiacapital", "name": "Sequoia Capital", "note": "AI Ascent conference talks" },
-    { "handle": "a16z", "name": "a16z", "note": "AI talks and founder interviews" }
+    { "handle": "a16z", "name": "a16z", "note": "AI talks and founder interviews" },
+    { "handle": "Deeplearningai", "name": "DeepLearning.AI", "note": "Short courses and workshops for AI builders" },
+    { "handle": "LangChain", "name": "LangChain", "note": "Agent engineering tutorials and builder talks" },
+    { "handle": "LennysPodcast", "name": "Lenny's Podcast", "note": "Product building with AI, PM craft" },
+    { "handle": "PeterYangYT", "name": "Peter Yang", "note": "Hands-on AI product building tutorials" },
+    { "handle": "claude", "name": "Claude", "note": "Anthropic's builder courses and Claude how-tos" }
   ]
 }

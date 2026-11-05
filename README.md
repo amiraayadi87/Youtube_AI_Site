@@ -1,10 +1,11 @@
 # AI Watchlist
 
-A personal YouTube page that shows only **recent, good-quality AI videos** from hand-picked channels, with favourites (Nick Saraev, Tech With Tim) starred and boosted.
+A personal YouTube page for an AI product builder: only **recent videos that help you build better AI products** (courses, build walkthroughs, conference talks with real lessons), from hand-picked channels.
 
 ## How it works
 
-- `channels.json` lists the channels to follow. Channels marked `"favorite": true` get a star and a small score boost, and none of their AI videos are filtered out.
+- `channels.json` lists the channels to pull from. `"favorite": true` gives a small score boost and skips the view-count filter (nothing is shown on the page).
+- `scripts/relevance.mjs` asks Claude whether each new video is useful for an AI product builder and drops the rest (news, hype, drama, consumer ads). Each video is judged once; verdicts are cached in `data/judgments.json`. Needs the `ANTHROPIC_API_KEY` repository secret; without it a stricter keyword rule is used.
 - Every 4 hours a GitHub Action (`.github/workflows/update.yml`) runs `scripts/fetch-videos.mjs`, which reads each channel's public YouTube RSS feed (no API key needed) and keeps a video only if it:
   1. was uploaded in the last 14 days,
   2. is about AI (title and description are checked against an AI keyword list),

@@ -8,8 +8,10 @@
 //   3. No Shorts
 //   4. Quality:  the video must be holding its own against the channel's other recent uploads
 //                (views/day relative to the channel median, plus like rate). Favorite channels skip this.
+//   5. Useful:   Claude judges whether the video helps an AI product builder grow (scripts/relevance.mjs).
 
 import { readFile, writeFile, mkdir } from "node:fs/promises";
+import { judge } from "./relevance.mjs";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 
@@ -194,7 +196,23 @@ async function main() {
     }
   }
 
+  // 5. Useful for an AI product builder (Claude verdict, cached; keyword rule without an API key).
+  const judgmentsPath = path.join(ROOT, "data", "judgments.json");
+  let judgments = {};
+  try { judgments = JSON.parse(await readFile(judgmentsPath, "utf8")); } catch {}
+  const verdicts = await judge(videos, judgments, process.env.ANTHROPIC_API_KEY);
+  const useful = videos.filter((v) => verdicts.get(v.id).useful);
+  for (const v of useful) v.why = verdicts.get(v.id).reason;
+  const bySource = (s) => [...verdicts.values()].filter((x) => x.source === s).length;
+  report.push(`\nrelevance: ${useful.length} of ${videos.length} useful (Claude judged ${bySource("claude")}, keyword rule ${bySource("rule")})`);
+  // Keep verdicts for 60 days so a video is never paid for twice while it can still appear.
+  const keepAfter = now - 60 * 864e5;
+  for (const [id, j] of Object.entries(judgments)) if (Date.parse(j.judged) < keepAfter) delete judgments[id];
+  videos.length = 0;
+  videos.push(...useful);
+
   videos.sort((a, b) => b.score - a.score);
+  await writeFile(judgmentsPath, JSON.stringify(judgments, null, 2) + "\n");
   await writeFile(cachePath, JSON.stringify(idCache, null, 2) + "\n");
   await writeFile(
     path.join(ROOT, "data", "videos.json"),

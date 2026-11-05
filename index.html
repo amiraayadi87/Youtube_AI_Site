@@ -43,11 +43,6 @@
   .seg button, .chip, .toggle { font: 500 13px Inter, sans-serif; border: 0; cursor: pointer; color: var(--ink); }
   .seg button { background: none; padding: 6px 12px; border-radius: 8px; }
   .seg button[aria-pressed=true] { background: var(--surface); box-shadow: var(--shadow); }
-  .chips { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
-  .chips::-webkit-scrollbar { display: none; }
-  .chip { white-space: nowrap; background: var(--chip); padding: 6px 12px; border-radius: 999px; }
-  .chip[aria-pressed=true] { background: var(--ink); color: var(--bg); }
-  .chip .star { color: var(--fav); }
   .toggle { background: none; color: var(--muted); display: inline-flex; gap: 6px; align-items: center; padding: 6px 4px; }
   .toggle input { accent-color: var(--accent); }
 
@@ -69,7 +64,7 @@
   .title { font-weight: 600; line-height: 1.35; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
   .meta { color: var(--muted); font-size: 13px; display: flex; flex-wrap: wrap; gap: 4px 10px; margin-top: auto; }
   .meta .ch { color: var(--ink); font-weight: 500; }
-  .meta .ch.fav::before { content: "★ "; color: var(--fav); }
+  .why { color: var(--muted); font-size: 13px; line-height: 1.4; }
   .empty { color: var(--muted); padding: 40px 0; text-align: center; }
   footer { color: var(--muted); font-size: 13px; padding: 48px 0 32px; }
   footer a { color: inherit; }
@@ -90,7 +85,7 @@
   <header>
     <div>
       <h1><img class="logo" src="logo.svg" alt="">AI <em>Watchlist</em></h1>
-      <p class="sub">New AI videos worth your time, from channels you trust.</p>
+      <p class="sub">New videos that help you build better AI products.</p>
     </div>
     <div class="updated" id="updated">Loading…</div>
   </header>
@@ -111,7 +106,6 @@
       </div>
       <label class="toggle"><input type="checkbox" id="hideWatched" checked> Hide watched</label>
     </div>
-    <div class="row"><div class="chips" id="chips"></div></div>
   </div>
 </div>
 
@@ -119,7 +113,7 @@
 
 <div class="wrap">
   <footer>
-    Refreshed automatically every few hours. Edit <code>channels.json</code> in the repo to change which channels are tracked.
+    Refreshed automatically every few hours. Only videos judged useful for an AI product builder (courses, build walkthroughs, talks with real lessons) are shown.
     Scores compare each video with the channel's own recent uploads (views per day and like rate), so a strong video from a small channel can still rank well.
   </footer>
 </div>
@@ -166,7 +160,8 @@ function card(v) {
     </div>
     <div class="body">
       <div class="title">${esc(v.title)}</div>
-      <div class="meta"><span class="ch ${v.favorite ? "fav" : ""}">${esc(v.channel)}</span><span>${fmtNum(v.views)} views</span><span>${ago(v.published)}</span></div>
+      ${v.why ? `<div class="why">${esc(v.why)}</div>` : ""}
+      <div class="meta"><span class="ch">${esc(v.channel)}</span><span>${fmtNum(v.views)} views</span><span>${ago(v.published)}</span></div>
     </div>
   </button>`;
 }
@@ -181,27 +176,12 @@ function render() {
   const q = state.q.trim().toLowerCase();
   let list = state.videos.filter((v) =>
     Date.parse(v.published) >= cutoff &&
-    (state.channel === "all" || v.channelHandle === state.channel) &&
-    (!q || (v.title + " " + v.channel).toLowerCase().includes(q)) &&
+    (!q || (v.title + " " + (v.why || "")).toLowerCase().includes(q)) &&
     (!state.hideWatched || !state.watched.has(v.id))
   );
   list.sort(state.sort === "new" ? (a, b) => Date.parse(b.published) - Date.parse(a.published) : (a, b) => b.score - a.score);
 
-  const html = state.channel === "all"
-    ? section(state.sort === "new" ? "Latest" : "Top picks", list)
-    : section(list[0]?.channel || "Videos", list);
-  $("#main").innerHTML = html || `<p class="empty">Nothing new here in the last ${state.days} days. Try a wider time window${state.hideWatched ? " or show watched videos" : ""}.</p>`;
-}
-
-function renderChips() {
-  const counts = new Map();
-  for (const v of state.videos) {
-    const c = counts.get(v.channelHandle) || { name: v.channel, fav: v.favorite, n: 0 };
-    c.n++; counts.set(v.channelHandle, c);
-  }
-  const sorted = [...counts].sort((a, b) => (b[1].fav - a[1].fav) || (b[1].n - a[1].n));
-  $("#chips").innerHTML = `<button class="chip" data-ch="all" aria-pressed="${state.channel === "all"}">All channels</button>` +
-    sorted.map(([h, c]) => `<button class="chip" data-ch="${esc(h)}" aria-pressed="${state.channel === h}">${c.fav ? '<span class="star">★</span> ' : ""}${esc(c.name)}</button>`).join("");
+  $("#main").innerHTML = section(state.sort === "new" ? "Latest" : "Top picks", list) || `<p class="empty">Nothing new here in the last ${state.days} days. Try a wider time window${state.hideWatched ? " or show watched videos" : ""}.</p>`;
 }
 
 function openVideo(id) {
@@ -209,7 +189,7 @@ function openVideo(id) {
   if (!v) return;
   $("#player").innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(v.id)}?autoplay=1&rel=0" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen title="${esc(v.title)}"></iframe>`;
   $("#dlgTitle").textContent = v.title;
-  $("#dlgMeta").innerHTML = `<span class="ch ${v.favorite ? "fav" : ""}">${esc(v.channel)}</span><span>${fmtNum(v.views)} views</span><span>${ago(v.published)}</span>`;
+  $("#dlgMeta").innerHTML = `<span class="ch">${esc(v.channel)}</span><span>${fmtNum(v.views)} views</span><span>${ago(v.published)}</span>`;
   $("#dlgOpen").href = v.url;
   $("#dlg").showModal();
   state.watched.add(v.id);
@@ -220,10 +200,6 @@ $("#dlg").addEventListener("close", () => { $("#player").innerHTML = ""; render(
 $("#dlgClose").onclick = () => $("#dlg").close();
 $("#dlg").addEventListener("click", (e) => { if (e.target === $("#dlg")) $("#dlg").close(); });
 $("#main").addEventListener("click", (e) => { const c = e.target.closest(".card"); if (c) openVideo(c.dataset.id); });
-$("#chips").addEventListener("click", (e) => {
-  const c = e.target.closest(".chip"); if (!c) return;
-  state.channel = c.dataset.ch; renderChips(); render();
-});
 document.querySelectorAll("[data-sort]").forEach((b) => b.onclick = () => {
   state.sort = b.dataset.sort;
   document.querySelectorAll("[data-sort]").forEach((x) => x.setAttribute("aria-pressed", x === b));
@@ -243,7 +219,7 @@ fetch("data/videos.json", { cache: "no-store" })
   .then((data) => {
     state.videos = data.videos || [];
     $("#updated").textContent = "Updated " + ago(data.updated);
-    renderChips(); render();
+    render();
   })
   .catch(() => {
     $("#updated").textContent = "";

@@ -35,6 +35,7 @@ jobs:
         env:
           MAX_AGE_DAYS: ${{ vars.MAX_AGE_DAYS }}
           MIN_RELATIVE_PERF: ${{ vars.MIN_RELATIVE_PERF }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
       - name: Save updated video list
         run: |
