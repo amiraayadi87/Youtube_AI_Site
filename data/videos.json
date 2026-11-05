@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T23:03:16.130Z",
+  "updated": "2026-11-05T23:07:25.549Z",
   "maxAgeDays": 14,
   "videos": [
     {
@@ -102,6 +102,23 @@
       "score": 86,
       "outperforming": false,
       "relPerf": 2.81,
+      "why": ""
+    },
+    {
+      "id": "xy_7SzwsIjM",
+      "title": "How to Build Agents That Improve Over Time: Model, Harness, Context | Interrupt London",
+      "url": "https://www.youtube.com/watch?v=xy_7SzwsIjM",
+      "thumbnail": "https://i.ytimg.com/vi/xy_7SzwsIjM/mqdefault.jpg",
+      "channel": "LangChain",
+      "channelHandle": "LangChain",
+      "favorite": false,
+      "published": "2026-10-27T16:27:33+00:00",
+      "views": 92904,
+      "likes": 1076,
+      "description": "Harrison Chase, Co-Founder and CEO of LangChain, splits an agent into three parts, the model, the harness, and the context, and explains how each one can improve over time: the model's weights through supervised fine-tuning with LangSmith Fine-Tuning and its smithtune CLI, or thr",
+      "score": 85,
+      "outperforming": true,
+      "relPerf": 11.15,
       "why": ""
     },
     {
@@ -215,12 +232,12 @@
       "channelHandle": "aiadvantage",
       "favorite": false,
       "published": "2026-11-04T22:20:46+00:00",
-      "views": 13611,
-      "likes": 258,
+      "views": 13798,
+      "likes": 259,
       "description": "Join The AI Advantage Club\nhttps://joinaiaclub.com/igor\n\nHere’s how we use ChatGPT and Claude Design to create the animations in my videos, from a transcript with timestamps to the final edit.\n\nClaude Design\nhttps://claude.ai/design\n\nChatGPT\nhttps://chatgpt.com/\n\nDropbox\nhttps://",
       "score": 70,
       "outperforming": false,
-      "relPerf": 1.24,
+      "relPerf": 1.25,
       "why": ""
     },
     {
@@ -292,6 +309,40 @@
       "why": ""
     },
     {
+      "id": "r1iJzoxFBtg",
+      "title": "Browser Use with Managed Deep Agents",
+      "url": "https://www.youtube.com/watch?v=r1iJzoxFBtg",
+      "thumbnail": "https://i.ytimg.com/vi/r1iJzoxFBtg/mqdefault.jpg",
+      "channel": "LangChain",
+      "channelHandle": "LangChain",
+      "favorite": false,
+      "published": "2026-11-04T17:45:24+00:00",
+      "views": 4419,
+      "likes": 37,
+      "description": "A lot of the work you'd want an agent to do happens on sites with no API. Agents can now use a browser to do all of the interactive things that a human could, like filling out forms, shopping, and more!\n\nManaged Deep Agents makes it easy to give your agent a browser in 2 lines of",
+      "score": 64,
+      "outperforming": false,
+      "relPerf": 1.27,
+      "why": ""
+    },
+    {
+      "id": "4iYOJ6gyQV4",
+      "title": "LangGraph explained in 1 minute",
+      "url": "https://www.youtube.com/watch?v=4iYOJ6gyQV4",
+      "thumbnail": "https://i.ytimg.com/vi/4iYOJ6gyQV4/mqdefault.jpg",
+      "channel": "LangChain",
+      "channelHandle": "LangChain",
+      "favorite": false,
+      "published": "2026-10-26T17:46:05+00:00",
+      "views": 11556,
+      "likes": 135,
+      "description": "You can get an LLM to call a tool in an afternoon. Getting an agent to behave predictably over many steps, or across a whole team of agents, is the harder problem, and it's the one LangGraph is built to solve. This one-minute explainer from LangChain Academy shows how LangGraph m",
+      "score": 62,
+      "outperforming": false,
+      "relPerf": 1.39,
+      "why": ""
+    },
+    {
       "id": "XIHZpZtYCzo",
       "title": "Your AI Agents Shouldn't Care Where They Run - Nikhil Harithas, Factory",
       "url": "https://www.youtube.com/watch?v=XIHZpZtYCzo",
@@ -360,6 +411,23 @@
       "why": ""
     },
     {
+      "id": "MC1g2fHYC88",
+      "title": "How to Make Amazing Videos with Claude and HyperFrames | Jake Moran",
+      "url": "https://www.youtube.com/watch?v=MC1g2fHYC88",
+      "thumbnail": "https://i.ytimg.com/vi/MC1g2fHYC88/mqdefault.jpg",
+      "channel": "Peter Yang",
+      "channelHandle": "PeterYangYT",
+      "favorite": false,
+      "published": "2026-10-25T13:00:24+00:00",
+      "views": 19104,
+      "likes": 234,
+      "description": "Jake is my go-to expert for creating and editing videos with AI. In our episode, he demoed how he prompts Claude and HyperFrames to make incredible videos for product launches, long-form tutorials, and shorts. We also covered the key terms that you need to learn to guide AI to ma",
+      "score": 57,
+      "outperforming": false,
+      "relPerf": 1.23,
+      "why": ""
+    },
+    {
       "id": "YqJ4asgj1R8",
       "title": "Stop Giving Your AI Agents API Keys - Kim Maida, Keycard & Mason Egger, Temporal",
       "url": "https://www.youtube.com/watch?v=YqJ4asgj1R8",
@@ -374,6 +442,23 @@
       "score": 52,
       "outperforming": false,
       "relPerf": 0.32,
+      "why": ""
+    },
+    {
+      "id": "Ddc5NFNnCfE",
+      "title": "My Mom Has Cancer Again. Here’s How I’m Using AI to Fight It",
+      "url": "https://www.youtube.com/watch?v=Ddc5NFNnCfE",
+      "thumbnail": "https://i.ytimg.com/vi/Ddc5NFNnCfE/mqdefault.jpg",
+      "channel": "Peter Yang",
+      "channelHandle": "PeterYangYT",
+      "favorite": false,
+      "published": "2026-11-04T14:00:13+00:00",
+      "views": 2297,
+      "likes": 60,
+      "description": "Copy my best AI workflows to save time and automate busywork: https://www.behindthecraft.com/?utm_source=youtube&utm_medium=tutorial\n🤝 Subscribe to my practical AI newsletter read by 150K+ professionals: https://creatoreconomy.so\n\nMy mom has survived cancer three times, and now ",
+      "score": 51,
+      "outperforming": false,
+      "relPerf": 0.33,
       "why": ""
     },
     {
@@ -436,7 +521,7 @@
       "channelHandle": "OpenAI",
       "favorite": false,
       "published": "2026-11-04T17:27:07+00:00",
-      "views": 12559,
+      "views": 12590,
       "likes": 92,
       "description": "Marketers shouldn’t have to wait for a new dashboard to understand how a campaign is performing.\n\nIn an early pilot with OpenAI, Figma is building shared context that helps marketers ask how campaigns are landing and whether they’re converting customers. Teams can get useful insi",
       "score": 46,
@@ -459,6 +544,40 @@
       "score": 41,
       "outperforming": false,
       "relPerf": 0.93,
+      "why": ""
+    },
+    {
+      "id": "Wb3hQaG_xf0",
+      "title": "Inside Managed Deep Agents: mda CLI, Context Hub, and Harbor Evals | Interrupt London",
+      "url": "https://www.youtube.com/watch?v=Wb3hQaG_xf0",
+      "thumbnail": "https://i.ytimg.com/vi/Wb3hQaG_xf0/mqdefault.jpg",
+      "channel": "LangChain",
+      "channelHandle": "LangChain",
+      "favorite": false,
+      "published": "2026-10-26T13:16:56+00:00",
+      "views": 5101,
+      "likes": 48,
+      "description": "Victor Moreira, Product Manager at LangChain, explains what it takes to move a deep agent from a local prototype into production, and how Managed Deep Agents, now in public beta, couples the Deep Agents harness with LangSmith infrastructure so your team can focus on the business ",
+      "score": 41,
+      "outperforming": false,
+      "relPerf": 0.61,
+      "why": ""
+    },
+    {
+      "id": "O3jCAZbrRHM",
+      "title": "Building Semiconductor Agents at Skyworks with LangGraph + LangSmith",
+      "url": "https://www.youtube.com/watch?v=O3jCAZbrRHM",
+      "thumbnail": "https://i.ytimg.com/vi/O3jCAZbrRHM/mqdefault.jpg",
+      "channel": "LangChain",
+      "channelHandle": "LangChain",
+      "favorite": false,
+      "published": "2026-10-29T17:44:10+00:00",
+      "views": 3806,
+      "likes": 28,
+      "description": "Mumtaz Vauhkonen, Global Head of AI/ML and Data at Skyworks Solutions, and AI engineer Kordag Mehmet Kilic walk through how the semiconductor company is putting agents to work on end-to-end test automation, root cause analysis, and design assistance. Each use case has its own KPI",
+      "score": 36,
+      "outperforming": false,
+      "relPerf": 0.46,
       "why": ""
     },
     {
