@@ -1,0 +1,20 @@
+{
+  "_comment": "Hand-picked AI channels. 'handle' is the @name from the channel URL. 'favorite: true' pins a channel to the top and skips the performance filter. Add or remove channels freely; the next scheduled run picks up changes.",
+  "channels": [
+    { "handle": "nicksaraev", "name": "Nick Saraev", "favorite": true, "note": "AI automation, agents, n8n, building AI businesses" },
+    { "handle": "aiexplained-official", "name": "AI Explained", "note": "Careful, research-driven model analysis" },
+    { "handle": "TwoMinutePapers", "name": "Two Minute Papers", "note": "New AI research papers, explained" },
+    { "handle": "AndrejKarpathy", "name": "Andrej Karpathy", "note": "Deep technical LLM lectures" },
+    { "handle": "LiamOttley", "name": "Liam Ottley", "note": "AI agency / automation business" },
+    { "handle": "ColeMedin", "name": "Cole Medin", "note": "AI agents and coding, hands-on builds" },
+    { "handle": "IndyDevDan", "name": "IndyDevDan", "note": "Agentic coding workflows" },
+    { "handle": "mreflow", "name": "Matt Wolfe", "note": "Weekly AI news and tools" },
+    { "handle": "aiadvantage", "name": "The AI Advantage", "note": "Practical AI tool walkthroughs" },
+    { "handle": "matthew_berman", "name": "Matthew Berman", "note": "AI news, model tests" },
+    { "handle": "samwitteveenai", "name": "Sam Witteveen", "note": "LLM engineering tutorials" },
+    { "handle": "GregIsenberg", "name": "Greg Isenberg", "note": "AI startup ideas and builder interviews" },
+    { "handle": "anthropic-ai", "name": "Anthropic", "note": "Official Claude updates" },
+    { "handle": "OpenAI", "name": "OpenAI", "note": "Official launches" },
+    { "handle": "Google_DeepMind", "name": "Google DeepMind", "note": "Official research and launches" }
+  ]
+}

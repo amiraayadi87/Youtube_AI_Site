@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Watchlist</title>
+<meta name="description" content="New, good-quality AI videos from hand-picked YouTube channels.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f6f5f1; --surface: #ffffff; --ink: #16161a; --muted: #6b6b73; --line: #e4e2db;
+    --accent: #e8452c; --accent-ink: #ffffff; --fav: #f2b705; --chip: #ecebe5;
+    --shadow: 0 1px 2px rgba(0,0,0,.05), 0 8px 24px rgba(0,0,0,.06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0f0f12; --surface: #18181d; --ink: #f1f0ec; --muted: #9a9aa3; --line: #2a2a31;
+      --accent: #ff5a3c; --chip: #23232a; --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0f0f12; --surface: #18181d; --ink: #f1f0ec; --muted: #9a9aa3; --line: #2a2a31;
+    --accent: #ff5a3c; --chip: #23232a; --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35);
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.5 Inter, system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 1240px; margin: 0 auto; padding: 0 16px; }
+  header { padding: 40px 0 20px; display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px; }
+  h1 { font: 400 clamp(40px, 7vw, 64px)/1 "Instrument Serif", Georgia, serif; margin: 0; letter-spacing: -.01em; }
+  h1 em { color: var(--accent); font-style: italic; }
+  .sub { color: var(--muted); margin: 8px 0 0; }
+  .updated { color: var(--muted); font-size: 13px; }
+
+  .controls { position: sticky; top: 0; z-index: 5; background: color-mix(in srgb, var(--bg) 92%, transparent); backdrop-filter: blur(8px); padding: 12px 0; border-bottom: 1px solid var(--line); }
+  .row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .row + .row { margin-top: 10px; }
+  input[type=search] { flex: 1 1 220px; min-width: 0; padding: 9px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); font: inherit; }
+  .seg { display: inline-flex; background: var(--chip); border-radius: 10px; padding: 3px; }
+  .seg button, .chip, .toggle { font: 500 13px Inter, sans-serif; border: 0; cursor: pointer; color: var(--ink); }
+  .seg button { background: none; padding: 6px 12px; border-radius: 8px; }
+  .seg button[aria-pressed=true] { background: var(--surface); box-shadow: var(--shadow); }
+  .chips { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
+  .chips::-webkit-scrollbar { display: none; }
+  .chip { white-space: nowrap; background: var(--chip); padding: 6px 12px; border-radius: 999px; }
+  .chip[aria-pressed=true] { background: var(--ink); color: var(--bg); }
+  .chip .star { color: var(--fav); }
+  .toggle { background: none; color: var(--muted); display: inline-flex; gap: 6px; align-items: center; padding: 6px 4px; }
+  .toggle input { accent-color: var(--accent); }
+
+  section h2 { font: 600 13px Inter, sans-serif; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 28px 0 12px; display: flex; gap: 8px; align-items: center; }
+  section h2 .count { font-weight: 500; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 20px; }
+  .card { background: var(--surface); border-radius: 14px; overflow: hidden; box-shadow: var(--shadow); cursor: pointer; display: flex; flex-direction: column; transition: transform .15s ease; border: 0; padding: 0; text-align: left; color: inherit; font: inherit; }
+  .card:hover { transform: translateY(-2px); }
+  .card:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .card.watched { opacity: .45; }
+  .thumb { position: relative; aspect-ratio: 16/9; background: var(--chip); }
+  .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .badges { position: absolute; left: 8px; top: 8px; display: flex; gap: 6px; }
+  .badge { font: 600 11px Inter, sans-serif; padding: 3px 7px; border-radius: 6px; background: rgba(0,0,0,.72); color: #fff; }
+  .badge.hot { background: var(--accent); }
+  .badge.new { background: #1f7a4d; }
+  .score { position: absolute; right: 8px; bottom: 8px; font: 700 12px Inter, sans-serif; background: rgba(0,0,0,.72); color: #fff; padding: 3px 7px; border-radius: 6px; }
+  .body { padding: 12px 14px 14px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
+  .title { font-weight: 600; line-height: 1.35; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .meta { color: var(--muted); font-size: 13px; display: flex; flex-wrap: wrap; gap: 4px 10px; margin-top: auto; }
+  .meta .ch { color: var(--ink); font-weight: 500; }
+  .meta .ch.fav::before { content: "★ "; color: var(--fav); }
+  .empty { color: var(--muted); padding: 40px 0; text-align: center; }
+  footer { color: var(--muted); font-size: 13px; padding: 48px 0 32px; }
+  footer a { color: inherit; }
+
+  dialog { border: 0; padding: 0; width: min(1000px, 100vw - 24px); background: var(--surface); color: var(--ink); border-radius: 14px; overflow: hidden; }
+  dialog::backdrop { background: rgba(0,0,0,.75); }
+  .player { aspect-ratio: 16/9; background: #000; }
+  .player iframe { width: 100%; height: 100%; border: 0; display: block; }
+  .dlg-body { padding: 14px 16px 16px; display: flex; gap: 12px; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; }
+  .dlg-body h3 { margin: 0 0 4px; font-size: 17px; }
+  .dlg-actions { display: flex; gap: 8px; }
+  .btn { font: 600 13px Inter, sans-serif; padding: 8px 14px; border-radius: 9px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); text-decoration: none; cursor: pointer; }
+  .btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>AI <em>Watchlist</em></h1>
+      <p class="sub">New AI videos worth your time, from channels you trust.</p>
+    </div>
+    <div class="updated" id="updated">Loading…</div>
+  </header>
+</div>
+
+<div class="controls">
+  <div class="wrap">
+    <div class="row">
+      <input type="search" id="q" placeholder="Search titles…" aria-label="Search titles">
+      <div class="seg" role="group" aria-label="Sort">
+        <button data-sort="score" aria-pressed="true">Best</button>
+        <button data-sort="new" aria-pressed="false">Newest</button>
+      </div>
+      <div class="seg" role="group" aria-label="Time window">
+        <button data-days="3" aria-pressed="false">3d</button>
+        <button data-days="7" aria-pressed="true">7d</button>
+        <button data-days="14" aria-pressed="false">14d</button>
+      </div>
+      <label class="toggle"><input type="checkbox" id="hideWatched" checked> Hide watched</label>
+    </div>
+    <div class="row"><div class="chips" id="chips"></div></div>
+  </div>
+</div>
+
+<main class="wrap" id="main"></main>
+
+<div class="wrap">
+  <footer>
+    Refreshed automatically every few hours. Edit <code>channels.json</code> in the repo to change which channels are tracked.
+    Scores compare each video with the channel's own recent uploads (views per day and like rate), so a strong video from a small channel can still rank well.
+  </footer>
+</div>
+
+<dialog id="dlg" aria-label="Video player">
+  <div class="player" id="player"></div>
+  <div class="dlg-body">
+    <div><h3 id="dlgTitle"></h3><div class="meta" id="dlgMeta"></div></div>
+    <div class="dlg-actions">
+      <a class="btn" id="dlgOpen" target="_blank" rel="noopener">Open on YouTube</a>
+      <button class="btn primary" id="dlgClose">Close</button>
+    </div>
+  </div>
+</dialog>
+
+<script>
+const store = {
+  get(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch { return d; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} },
+};
+const state = {
+  videos: [], sort: "score", days: 7, q: "", channel: "all",
+  hideWatched: store.get("hideWatched", true),
+  watched: new Set(store.get("watched", [])),
+};
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const fmtNum = (n) => n >= 1e6 ? (n / 1e6).toFixed(1).replace(/\.0$/, "") + "M" : n >= 1e3 ? (n / 1e3).toFixed(1).replace(/\.0$/, "") + "K" : String(n);
+const ago = (iso) => {
+  const h = (Date.now() - Date.parse(iso)) / 36e5;
+  if (h < 1) return "just now";
+  if (h < 24) return Math.floor(h) + "h ago";
+  const d = Math.floor(h / 24);
+  return d === 1 ? "yesterday" : d + " days ago";
+};
+
+function card(v) {
+  const fresh = (Date.now() - Date.parse(v.published)) / 36e5 < 24;
+  return `<button class="card ${state.watched.has(v.id) ? "watched" : ""}" data-id="${esc(v.id)}">
+    <div class="thumb">
+      <img src="${esc(v.thumbnail)}" alt="" loading="lazy">
+      <div class="badges">${fresh ? '<span class="badge new">NEW</span>' : ""}${v.outperforming ? '<span class="badge hot">Outperforming</span>' : ""}</div>
+      <span class="score" title="Quality score">${v.score}</span>
+    </div>
+    <div class="body">
+      <div class="title">${esc(v.title)}</div>
+      <div class="meta"><span class="ch ${v.favorite ? "fav" : ""}">${esc(v.channel)}</span><span>${fmtNum(v.views)} views</span><span>${ago(v.published)}</span></div>
+    </div>
+  </button>`;
+}
+
+function section(title, list) {
+  if (!list.length) return "";
+  return `<section><h2>${title} <span class="count">· ${list.length}</span></h2><div class="grid">${list.map(card).join("")}</div></section>`;
+}
+
+function render() {
+  const cutoff = Date.now() - state.days * 864e5;
+  const q = state.q.trim().toLowerCase();
+  let list = state.videos.filter((v) =>
+    Date.parse(v.published) >= cutoff &&
+    (state.channel === "all" || v.channelHandle === state.channel) &&
+    (!q || (v.title + " " + v.channel).toLowerCase().includes(q)) &&
+    (!state.hideWatched || !state.watched.has(v.id))
+  );
+  list.sort(state.sort === "new" ? (a, b) => Date.parse(b.published) - Date.parse(a.published) : (a, b) => b.score - a.score);
+
+  let html;
+  if (state.channel === "all") {
+    const favs = list.filter((v) => v.favorite);
+    const rest = list.filter((v) => !v.favorite);
+    html = section("★ From your favourites", favs) + section(state.sort === "new" ? "Latest" : "Top picks", rest);
+  } else {
+    html = section(state.channel === "all" ? "" : (list[0]?.channel || "Videos"), list);
+  }
+  $("#main").innerHTML = html || `<p class="empty">Nothing new here in the last ${state.days} days. Try a wider time window${state.hideWatched ? " or show watched videos" : ""}.</p>`;
+}
+
+function renderChips() {
+  const counts = new Map();
+  for (const v of state.videos) {
+    const c = counts.get(v.channelHandle) || { name: v.channel, fav: v.favorite, n: 0 };
+    c.n++; counts.set(v.channelHandle, c);
+  }
+  const sorted = [...counts].sort((a, b) => (b[1].fav - a[1].fav) || (b[1].n - a[1].n));
+  $("#chips").innerHTML = `<button class="chip" data-ch="all" aria-pressed="${state.channel === "all"}">All channels</button>` +
+    sorted.map(([h, c]) => `<button class="chip" data-ch="${esc(h)}" aria-pressed="${state.channel === h}">${c.fav ? '<span class="star">★</span> ' : ""}${esc(c.name)}</button>`).join("");
+}
+
+function openVideo(id) {
+  const v = state.videos.find((x) => x.id === id);
+  if (!v) return;
+  $("#player").innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(v.id)}?autoplay=1&rel=0" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen title="${esc(v.title)}"></iframe>`;
+  $("#dlgTitle").textContent = v.title;
+  $("#dlgMeta").innerHTML = `<span class="ch ${v.favorite ? "fav" : ""}">${esc(v.channel)}</span><span>${fmtNum(v.views)} views</span><span>${ago(v.published)}</span>`;
+  $("#dlgOpen").href = v.url;
+  $("#dlg").showModal();
+  state.watched.add(v.id);
+  store.set("watched", [...state.watched].slice(-2000));
+}
+
+$("#dlg").addEventListener("close", () => { $("#player").innerHTML = ""; render(); });
+$("#dlgClose").onclick = () => $("#dlg").close();
+$("#dlg").addEventListener("click", (e) => { if (e.target === $("#dlg")) $("#dlg").close(); });
+$("#main").addEventListener("click", (e) => { const c = e.target.closest(".card"); if (c) openVideo(c.dataset.id); });
+$("#chips").addEventListener("click", (e) => {
+  const c = e.target.closest(".chip"); if (!c) return;
+  state.channel = c.dataset.ch; renderChips(); render();
+});
+document.querySelectorAll("[data-sort]").forEach((b) => b.onclick = () => {
+  state.sort = b.dataset.sort;
+  document.querySelectorAll("[data-sort]").forEach((x) => x.setAttribute("aria-pressed", x === b));
+  render();
+});
+document.querySelectorAll("[data-days]").forEach((b) => b.onclick = () => {
+  state.days = +b.dataset.days;
+  document.querySelectorAll("[data-days]").forEach((x) => x.setAttribute("aria-pressed", x === b));
+  render();
+});
+$("#q").addEventListener("input", (e) => { state.q = e.target.value; render(); });
+$("#hideWatched").checked = state.hideWatched;
+$("#hideWatched").onchange = (e) => { state.hideWatched = e.target.checked; store.set("hideWatched", state.hideWatched); render(); };
+
+fetch("data/videos.json", { cache: "no-store" })
+  .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
+  .then((data) => {
+    state.videos = data.videos || [];
+    $("#updated").textContent = "Updated " + ago(data.updated);
+    renderChips(); render();
+  })
+  .catch(() => {
+    $("#updated").textContent = "";
+    $("#main").innerHTML = '<p class="empty">No video list yet. The first update runs automatically shortly after the site is published.</p>';
+  });
+</script>
+</body>
+</html>
