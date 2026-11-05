@@ -21,6 +21,10 @@
     { "handle": "GregIsenberg", "name": "Greg Isenberg", "note": "AI startup ideas and builder interviews" },
     { "handle": "anthropic-ai", "name": "Anthropic", "note": "Official Claude updates" },
     { "handle": "OpenAI", "name": "OpenAI", "note": "Official launches" },
-    { "handle": "googledeepmind", "name": "Google DeepMind", "note": "Official research and launches" }
+    { "handle": "googledeepmind", "name": "Google DeepMind", "note": "Official research and launches" },
+    { "handle": "ycombinator", "name": "Y Combinator", "note": "Startup School and AI Startup School talks" },
+    { "handle": "aiDotEngineer", "name": "AI Engineer", "note": "AI Engineer World's Fair and Summit talks" },
+    { "handle": "sequoiacapital", "name": "Sequoia Capital", "note": "AI Ascent conference talks" },
+    { "handle": "a16z", "name": "a16z", "note": "AI talks and founder interviews" }
   ]
 }
