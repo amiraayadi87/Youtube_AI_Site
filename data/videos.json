@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T23:11:15.362Z",
+  "updated": "2026-11-06T06:57:11.424Z",
   "maxAgeDays": 14,
   "videos": [
     {
@@ -530,23 +530,6 @@
       "why": ""
     },
     {
-      "id": "ZIBI6FiLxgQ",
-      "title": "How I’m Actually Using Claude Duet (After 10 Hours of Testing)",
-      "url": "https://www.youtube.com/watch?v=ZIBI6FiLxgQ",
-      "thumbnail": "https://i.ytimg.com/vi/ZIBI6FiLxgQ/mqdefault.jpg",
-      "channel": "Riley Brown",
-      "channelHandle": "rileybrownai",
-      "favorite": false,
-      "published": "2026-10-23T20:50:23+00:00",
-      "views": 130791,
-      "likes": 869,
-      "description": "Sponsored by Bluehost. Start building and running your own AI agents: https://www.bluehost.com/ai-gateway?utm_source=influencer&utm_medium=youtube&utm_campaign=jev&utm_content=Riley_Brown&channelid=P99C46097236S651N0B3003A151D115E0000V106\n\nI’ve spent around 10 hours using Claude ",
-      "score": 41,
-      "outperforming": false,
-      "relPerf": 0.93,
-      "why": ""
-    },
-    {
       "id": "Wb3hQaG_xf0",
       "title": "Inside Managed Deep Agents: mda CLI, Context Hub, and Harbor Evals | Interrupt London",
       "url": "https://www.youtube.com/watch?v=Wb3hQaG_xf0",
@@ -561,6 +544,23 @@
       "score": 41,
       "outperforming": false,
       "relPerf": 0.61,
+      "why": ""
+    },
+    {
+      "id": "ZIBI6FiLxgQ",
+      "title": "How I’m Actually Using Claude Duet (After 10 Hours of Testing)",
+      "url": "https://www.youtube.com/watch?v=ZIBI6FiLxgQ",
+      "thumbnail": "https://i.ytimg.com/vi/ZIBI6FiLxgQ/mqdefault.jpg",
+      "channel": "Riley Brown",
+      "channelHandle": "rileybrownai",
+      "favorite": false,
+      "published": "2026-10-23T20:50:23+00:00",
+      "views": 131179,
+      "likes": 873,
+      "description": "Sponsored by Bluehost. Start building and running your own AI agents: https://www.bluehost.com/ai-gateway?utm_source=influencer&utm_medium=youtube&utm_campaign=jev&utm_content=Riley_Brown&channelid=P99C46097236S651N0B3003A151D115E0000V106\n\nI’ve spent around 10 hours using Claude ",
+      "score": 40,
+      "outperforming": false,
+      "relPerf": 0.93,
       "why": ""
     },
     {
