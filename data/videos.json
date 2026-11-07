@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T20:17:04.356Z",
+  "updated": "2026-11-07T23:42:59.221Z",
   "maxAgeDays": 14,
   "videos": [
     {
@@ -470,12 +470,12 @@
       "channelHandle": "LennysPodcast",
       "favorite": false,
       "published": "2026-11-01T13:30:01+00:00",
-      "views": 54149,
-      "likes": 440,
+      "views": 54633,
+      "likes": 444,
       "description": "Hector Serrano runs one of the most innovative and successful paid growth programs in Silicon Valley. As Head of Content at Wispr Flow, a leading AI voice-to-text tool, he built a roster of 50 creators who drive 500 to 600 paid user-generated content (UGC) ads every month. The cr",
       "score": 51,
       "outperforming": false,
-      "relPerf": 0.91,
+      "relPerf": 0.9,
       "why": ""
     },
     {
