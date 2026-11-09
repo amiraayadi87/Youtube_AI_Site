@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T20:33:25.186Z",
+  "updated": "2026-11-09T06:48:01.684Z",
   "maxAgeDays": 14,
   "videos": [
     {
@@ -122,23 +122,6 @@
       "why": ""
     },
     {
-      "id": "XzjSx7u9mGw",
-      "title": "AI Engineering Full Course - Build and Deploy a Real AI App",
-      "url": "https://www.youtube.com/watch?v=XzjSx7u9mGw",
-      "thumbnail": "https://i.ytimg.com/vi/XzjSx7u9mGw/mqdefault.jpg",
-      "channel": "Dave Ebbelaar",
-      "channelHandle": "daveebbelaar",
-      "favorite": false,
-      "published": "2026-10-30T17:13:44+00:00",
-      "views": 103367,
-      "likes": 1977,
-      "description": "In this full AI Engineering course, I show you how to build an AI customer support agent from start to finish. \n\n💻 Grab the Hostinger Black Friday Deal: https://hostinger.com/davevps\nUse coupon code DAVEVPS for extra 10% off\n\n📘 Course Handbook: https://learn.datalumina.com/docs",
-      "score": 85,
-      "outperforming": true,
-      "relPerf": 4.78,
-      "why": ""
-    },
-    {
       "id": "_0SQh8a1Osk",
       "title": "Don't Vibe Code Your Agent Infrastructure - Akshat Bubna, Modal",
       "url": "https://www.youtube.com/watch?v=_0SQh8a1Osk",
@@ -190,6 +173,23 @@
       "why": ""
     },
     {
+      "id": "XzjSx7u9mGw",
+      "title": "AI Engineering Full Course - Build and Deploy a Real AI App",
+      "url": "https://www.youtube.com/watch?v=XzjSx7u9mGw",
+      "thumbnail": "https://i.ytimg.com/vi/XzjSx7u9mGw/mqdefault.jpg",
+      "channel": "Dave Ebbelaar",
+      "channelHandle": "daveebbelaar",
+      "favorite": false,
+      "published": "2026-10-30T17:13:44+00:00",
+      "views": 104426,
+      "likes": 1998,
+      "description": "In this full AI Engineering course, I show you how to build an AI customer support agent from start to finish. \n\n💻 Grab the Hostinger Black Friday Deal: https://hostinger.com/davevps\nUse coupon code DAVEVPS for extra 10% off\n\n📘 Course Handbook: https://learn.datalumina.com/docs",
+      "score": 84,
+      "outperforming": true,
+      "relPerf": 4.82,
+      "why": ""
+    },
+    {
       "id": "BT1Mo-fD-g0",
       "title": "Your Coding Agent Can't Undo Its Own Mistakes - Tanmay Sah & Dolly Sah",
       "url": "https://www.youtube.com/watch?v=BT1Mo-fD-g0",
@@ -232,12 +232,12 @@
       "channelHandle": "daveebbelaar",
       "favorite": false,
       "published": "2026-10-26T20:34:35+00:00",
-      "views": 128050,
-      "likes": 2534,
+      "views": 128352,
+      "likes": 2541,
       "description": "🔗 BAMA, free on GitHub: https://github.com/daveebbelaar/bama\n🎙️ Get one free month of Glaido Pro: https://get.glaido.com/dave\n\nOn Windows? Checkout BAWA: https://github.com/daveebbelaar/bawa\n\n⏱️ Timestamps\n00:00 Apps I built\n00:31 Why native Mac apps\n01:05 BAMA: Build Any Mac A",
       "score": 81,
       "outperforming": true,
-      "relPerf": 5.92,
+      "relPerf": 5.93,
       "why": ""
     },
     {
@@ -317,12 +317,12 @@
       "channelHandle": "LiamOttley",
       "favorite": false,
       "published": "2026-11-02T18:01:50+00:00",
-      "views": 24098,
-      "likes": 402,
+      "views": 24636,
+      "likes": 406,
       "description": "Try Kylon free: https://kylon.io/?utm_source=liam&utm_campaign=october\nWhen you upgrade, enter LIAMFRIENDS at Stripe checkout to get your first month of the $50 or $100 Core plan free.\n\nGet all resources mentioned: https://liamottley.com/kylon\nApify (web scraping): https://apify.",
       "score": 70,
       "outperforming": false,
-      "relPerf": 1.33,
+      "relPerf": 1.37,
       "why": ""
     },
     {
@@ -368,12 +368,12 @@
       "channelHandle": "aiadvantage",
       "favorite": false,
       "published": "2026-11-04T22:20:46+00:00",
-      "views": 30831,
-      "likes": 439,
+      "views": 34018,
+      "likes": 460,
       "description": "Join The AI Advantage Club\nhttps://joinaiaclub.com/igor\n\nHere’s how we use ChatGPT and Claude Design to create the animations in my videos, from a transcript with timestamps to the final edit.\n\nClaude Design\nhttps://claude.ai/design\n\nChatGPT\nhttps://chatgpt.com/\n\nDropbox\nhttps://",
-      "score": 65,
+      "score": 66,
       "outperforming": false,
-      "relPerf": 1.38,
+      "relPerf": 1.44,
       "why": ""
     },
     {
@@ -402,12 +402,12 @@
       "channelHandle": "ColeMedin",
       "favorite": false,
       "published": "2026-11-02T21:06:17+00:00",
-      "views": 25425,
-      "likes": 305,
+      "views": 25639,
+      "likes": 307,
       "description": "My AI software factory ships hundreds of pull requests a week, and I really didn't want a control plane for it. I figured it would make things less autonomous and give me more to manage. It's turned out to be the only way I can keep up with all of it, so here's a tour of the miss",
-      "score": 55,
+      "score": 54,
       "outperforming": false,
-      "relPerf": 0.99,
+      "relPerf": 0.97,
       "why": ""
     },
     {
@@ -521,10 +521,10 @@
       "channelHandle": "ColeMedin",
       "favorite": false,
       "published": "2026-10-29T00:00:35+00:00",
-      "views": 18008,
+      "views": 18094,
       "likes": 288,
       "description": "Your AI second brain should be dead simple. Mine is a few tools and a folder of markdown files, and it saves me 25 to 30 hours every week. \n\nIn this video I cover the four fundamentals that make it work (Context, Connections, Capabilities and Cadence), so you can build them into ",
-      "score": 48,
+      "score": 47,
       "outperforming": false,
       "relPerf": 0.65,
       "why": ""
