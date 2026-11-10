@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T18:54:02.253Z",
+  "updated": "2026-11-10T02:46:23.145Z",
   "maxAgeDays": 14,
   "videos": [
     {
@@ -187,23 +187,6 @@
       "score": 81,
       "outperforming": false,
       "relPerf": 1.58,
-      "why": ""
-    },
-    {
-      "id": "gN6wl-OX8-Q",
-      "title": "This Free Repo Lets Claude Code Build Any Mac App",
-      "url": "https://www.youtube.com/watch?v=gN6wl-OX8-Q",
-      "thumbnail": "https://i.ytimg.com/vi/gN6wl-OX8-Q/mqdefault.jpg",
-      "channel": "Dave Ebbelaar",
-      "channelHandle": "daveebbelaar",
-      "favorite": false,
-      "published": "2026-10-26T20:34:35+00:00",
-      "views": 128675,
-      "likes": 2546,
-      "description": "🔗 BAMA, free on GitHub: https://github.com/daveebbelaar/bama\n🎙️ Get one free month of Glaido Pro: https://get.glaido.com/dave\n\nOn Windows? Checkout BAWA: https://github.com/daveebbelaar/bawa\n\n⏱️ Timestamps\n00:00 Apps I built\n00:31 Why native Mac apps\n01:05 BAMA: Build Any Mac A",
-      "score": 80,
-      "outperforming": true,
-      "relPerf": 5.94,
       "why": ""
     },
     {
