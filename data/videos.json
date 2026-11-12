@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T16:17:22.638Z",
+  "updated": "2026-11-12T01:55:43.724Z",
   "maxAgeDays": 14,
   "videos": [
     {
@@ -88,6 +88,23 @@
       "why": ""
     },
     {
+      "id": "XzjSx7u9mGw",
+      "title": "AI Engineering Full Course - Build and Deploy a Real AI App",
+      "url": "https://www.youtube.com/watch?v=XzjSx7u9mGw",
+      "thumbnail": "https://i.ytimg.com/vi/XzjSx7u9mGw/mqdefault.jpg",
+      "channel": "Dave Ebbelaar",
+      "channelHandle": "daveebbelaar",
+      "favorite": false,
+      "published": "2026-10-30T17:13:44+00:00",
+      "views": 117091,
+      "likes": 2179,
+      "description": "In this full AI Engineering course, I show you how to build an AI customer support agent from start to finish. \n\n💻 Grab the Hostinger Black Friday Deal: https://hostinger.com/davevps\nUse coupon code DAVEVPS for extra 10% off\n\n📘 Course Handbook: https://learn.datalumina.com/docs",
+      "score": 83,
+      "outperforming": true,
+      "relPerf": 4.92,
+      "why": ""
+    },
+    {
       "id": "OrcsMi2-IcM",
       "title": "NEW DeepSeek Harness -  Super Agent!",
       "url": "https://www.youtube.com/watch?v=OrcsMi2-IcM",
@@ -102,23 +119,6 @@
       "score": 82,
       "outperforming": true,
       "relPerf": 3.62,
-      "why": ""
-    },
-    {
-      "id": "XzjSx7u9mGw",
-      "title": "AI Engineering Full Course - Build and Deploy a Real AI App",
-      "url": "https://www.youtube.com/watch?v=XzjSx7u9mGw",
-      "thumbnail": "https://i.ytimg.com/vi/XzjSx7u9mGw/mqdefault.jpg",
-      "channel": "Dave Ebbelaar",
-      "channelHandle": "daveebbelaar",
-      "favorite": false,
-      "published": "2026-10-30T17:13:44+00:00",
-      "views": 115231,
-      "likes": 2160,
-      "description": "In this full AI Engineering course, I show you how to build an AI customer support agent from start to finish. \n\n💻 Grab the Hostinger Black Friday Deal: https://hostinger.com/davevps\nUse coupon code DAVEVPS for extra 10% off\n\n📘 Course Handbook: https://learn.datalumina.com/docs",
-      "score": 81,
-      "outperforming": true,
-      "relPerf": 4.85,
       "why": ""
     },
     {
@@ -156,23 +156,6 @@
       "why": ""
     },
     {
-      "id": "Q78dJ0vkWe8",
-      "title": "How To Build The Future: Paul Graham & Amjad Masad",
-      "url": "https://www.youtube.com/watch?v=Q78dJ0vkWe8",
-      "thumbnail": "https://i.ytimg.com/vi/Q78dJ0vkWe8/mqdefault.jpg",
-      "channel": "Y Combinator",
-      "channelHandle": "ycombinator",
-      "favorite": false,
-      "published": "2026-11-07T15:00:14+00:00",
-      "views": 80055,
-      "likes": 682,
-      "description": "Replit was building toward the AI coding era years before it had a name. In 2024, the company shipped an agent that could take a request in plain English, work through errors, provision its own infrastructure, and keep going until the software actually worked. The model companies",
-      "score": 74,
-      "outperforming": true,
-      "relPerf": 1.97,
-      "why": ""
-    },
-    {
       "id": "yH7_SIIgI-Y",
       "title": "An Agent That Fixes Its Own Mistakes - Saloni Gandhi & Ziwei Guo, LinkedIn",
       "url": "https://www.youtube.com/watch?v=yH7_SIIgI-Y",
@@ -204,6 +187,23 @@
       "score": 72,
       "outperforming": false,
       "relPerf": 1.2,
+      "why": ""
+    },
+    {
+      "id": "Q78dJ0vkWe8",
+      "title": "How To Build The Future: Paul Graham & Amjad Masad",
+      "url": "https://www.youtube.com/watch?v=Q78dJ0vkWe8",
+      "thumbnail": "https://i.ytimg.com/vi/Q78dJ0vkWe8/mqdefault.jpg",
+      "channel": "Y Combinator",
+      "channelHandle": "ycombinator",
+      "favorite": false,
+      "published": "2026-11-07T15:00:14+00:00",
+      "views": 81722,
+      "likes": 687,
+      "description": "Replit was building toward the AI coding era years before it had a name. In 2024, the company shipped an agent that could take a request in plain English, work through errors, provision its own infrastructure, and keep going until the software actually worked. The model companies",
+      "score": 72,
+      "outperforming": true,
+      "relPerf": 1.88,
       "why": ""
     },
     {
@@ -394,23 +394,6 @@
       "why": ""
     },
     {
-      "id": "vl7HiMdGfjo",
-      "title": "What Happens When Everyone Can Build Software",
-      "url": "https://www.youtube.com/watch?v=vl7HiMdGfjo",
-      "thumbnail": "https://i.ytimg.com/vi/vl7HiMdGfjo/mqdefault.jpg",
-      "channel": "Y Combinator",
-      "channelHandle": "ycombinator",
-      "favorite": false,
-      "published": "2026-10-30T14:30:00+00:00",
-      "views": 109547,
-      "likes": 731,
-      "description": "In this episode of the Lightcone, the hosts sit down with Paul Copplestone, co-founder and CEO of Supabase. Since starting in the YC summer batch of 2020, the company has exploded to 13 million users and over 50 million databases under management. Supabase is now positioning for ",
-      "score": 63,
-      "outperforming": true,
-      "relPerf": 2.05,
-      "why": ""
-    },
-    {
       "id": "b7l_Dhe1h8M",
       "title": "Harness-as-a-Service: Building with the Agents API | DevDay 2026",
       "url": "https://www.youtube.com/watch?v=b7l_Dhe1h8M",
@@ -436,12 +419,29 @@
       "channelHandle": "ycombinator",
       "favorite": false,
       "published": "2026-11-04T15:00:23+00:00",
-      "views": 53501,
-      "likes": 974,
+      "views": 54456,
+      "likes": 982,
       "description": "Google, Anthropic, and Databricks were all started by founders with PhDs. But they’re the exceptions. Most academic founders fail, because the instincts that get you published are the ones that can get you killed in a startup. Francois Chaubard knows both sides. He’s a visiting p",
       "score": 62,
       "outperforming": false,
       "relPerf": 1,
+      "why": ""
+    },
+    {
+      "id": "vl7HiMdGfjo",
+      "title": "What Happens When Everyone Can Build Software",
+      "url": "https://www.youtube.com/watch?v=vl7HiMdGfjo",
+      "thumbnail": "https://i.ytimg.com/vi/vl7HiMdGfjo/mqdefault.jpg",
+      "channel": "Y Combinator",
+      "channelHandle": "ycombinator",
+      "favorite": false,
+      "published": "2026-10-30T14:30:00+00:00",
+      "views": 111211,
+      "likes": 732,
+      "description": "In this episode of the Lightcone, the hosts sit down with Paul Copplestone, co-founder and CEO of Supabase. Since starting in the YC summer batch of 2020, the company has exploded to 13 million users and over 50 million databases under management. Supabase is now positioning for ",
+      "score": 62,
+      "outperforming": true,
+      "relPerf": 2.04,
       "why": ""
     },
     {
@@ -538,12 +538,12 @@
       "channelHandle": "mreflow",
       "favorite": false,
       "published": "2026-11-04T16:40:16+00:00",
-      "views": 96735,
-      "likes": 1502,
+      "views": 98436,
+      "likes": 1514,
       "description": "Try vidIQ for only $1 https://vidiq.com/mattwolfe/\n\nLearn how to edit videos with Claude AI, work with Premiere Pro, and turn your footage into short-form content.\n\nIn this guide, I walk through how to use Claude to help with video editing, from working with your existing footage",
       "score": 50,
       "outperforming": false,
-      "relPerf": 0.87,
+      "relPerf": 0.88,
       "why": ""
     },
     {
@@ -578,23 +578,6 @@
       "score": 46,
       "outperforming": false,
       "relPerf": 0.17,
-      "why": ""
-    },
-    {
-      "id": "qIWB1yMsqRo",
-      "title": "The 4 Components of Every Successful AI Second Brain (Build These Now)",
-      "url": "https://www.youtube.com/watch?v=qIWB1yMsqRo",
-      "thumbnail": "https://i.ytimg.com/vi/qIWB1yMsqRo/mqdefault.jpg",
-      "channel": "Cole Medin",
-      "channelHandle": "ColeMedin",
-      "favorite": false,
-      "published": "2026-10-29T00:00:35+00:00",
-      "views": 18662,
-      "likes": 292,
-      "description": "Your AI second brain should be dead simple. Mine is a few tools and a folder of markdown files, and it saves me 25 to 30 hours every week. \n\nIn this video I cover the four fundamentals that make it work (Context, Connections, Capabilities and Cadence), so you can build them into ",
-      "score": 45,
-      "outperforming": false,
-      "relPerf": 0.7,
       "why": ""
     },
     {
