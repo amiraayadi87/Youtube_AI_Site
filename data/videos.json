@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T16:31:24.480Z",
+  "updated": "2026-11-14T00:55:08.256Z",
   "maxAgeDays": 14,
   "videos": [
     {
@@ -102,23 +102,6 @@
       "score": 86,
       "outperforming": true,
       "relPerf": 2.47,
-      "why": ""
-    },
-    {
-      "id": "XzjSx7u9mGw",
-      "title": "AI Engineering Full Course - Build and Deploy a Real AI App",
-      "url": "https://www.youtube.com/watch?v=XzjSx7u9mGw",
-      "thumbnail": "https://i.ytimg.com/vi/XzjSx7u9mGw/mqdefault.jpg",
-      "channel": "Dave Ebbelaar",
-      "channelHandle": "daveebbelaar",
-      "favorite": false,
-      "published": "2026-10-30T17:13:44+00:00",
-      "views": 123139,
-      "likes": 2259,
-      "description": "In this full AI Engineering course, I show you how to build an AI customer support agent from start to finish. \n\n💻 Grab the Hostinger Black Friday Deal: https://hostinger.com/davevps\nUse coupon code DAVEVPS for extra 10% off\n\n📘 Course Handbook: https://learn.datalumina.com/docs",
-      "score": 81,
-      "outperforming": true,
-      "relPerf": 5.15,
       "why": ""
     },
     {
