@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14T18:14:12.849Z",
+  "updated": "2026-11-14T23:58:06.771Z",
   "maxAgeDays": 14,
   "videos": [
     {
@@ -190,23 +190,6 @@
       "why": ""
     },
     {
-      "id": "JpJUHOe8bDo",
-      "title": "Grok Bot: What Changes When You Can Build AI Teammates",
-      "url": "https://www.youtube.com/watch?v=JpJUHOe8bDo",
-      "thumbnail": "https://i.ytimg.com/vi/JpJUHOe8bDo/mqdefault.jpg",
-      "channel": "Y Combinator",
-      "channelHandle": "ycombinator",
-      "favorite": false,
-      "published": "2026-11-14T15:00:21+00:00",
-      "views": 7280,
-      "likes": 222,
-      "description": "Lauren Tan and Roman Ugarte join this episode of the Lightcone to go in deep on how they built and deployed Grok Bot. They explain how automated tests and codebase guardrails help agents check their own work, why bots should earn broader access over time, and why faster and cheap",
-      "score": 68,
-      "outperforming": false,
-      "relPerf": 0.9,
-      "why": ""
-    },
-    {
       "id": "G3i2k6DdI0o",
       "title": "Claude Fable 5.2: How I’d Make Money With It",
       "url": "https://www.youtube.com/watch?v=G3i2k6DdI0o",
@@ -232,12 +215,12 @@
       "channelHandle": "matthew_berman",
       "favorite": false,
       "published": "2026-11-12T22:09:15+00:00",
-      "views": 65369,
-      "likes": 1324,
+      "views": 68136,
+      "likes": 1382,
       "description": "Check out Jeremy on X: https://x.com/jeremyberman\n\nFrontier Pass members saw this video first! https://forwardfuture.com/frontier-pass\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X:",
       "score": 66,
       "outperforming": false,
-      "relPerf": 0.94,
+      "relPerf": 0.92,
       "why": ""
     },
     {
@@ -351,8 +334,8 @@
       "channelHandle": "ycombinator",
       "favorite": false,
       "published": "2026-11-07T15:00:14+00:00",
-      "views": 87411,
-      "likes": 740,
+      "views": 87795,
+      "likes": 743,
       "description": "Replit was building toward the AI coding era years before it had a name. In 2024, the company shipped an agent that could take a request in plain English, work through errors, provision its own infrastructure, and keep going until the software actually worked. The model companies",
       "score": 63,
       "outperforming": false,
@@ -402,8 +385,8 @@
       "channelHandle": "ycombinator",
       "favorite": false,
       "published": "2026-11-04T15:00:23+00:00",
-      "views": 58284,
-      "likes": 1038,
+      "views": 58576,
+      "likes": 1041,
       "description": "Google, Anthropic, and Databricks were all started by founders with PhDs. But they’re the exceptions. Most academic founders fail, because the instincts that get you published are the ones that can get you killed in a startup. Francois Chaubard knows both sides. He’s a visiting p",
       "score": 59,
       "outperforming": false,
@@ -666,6 +649,23 @@
       "why": ""
     },
     {
+      "id": "fAkm3YQg73s",
+      "title": "When To Use Fable 5.2 or Opus in Claude Code (Full Tutorial)",
+      "url": "https://www.youtube.com/watch?v=fAkm3YQg73s",
+      "thumbnail": "https://i.ytimg.com/vi/fAkm3YQg73s/mqdefault.jpg",
+      "channel": "Peter Yang",
+      "channelHandle": "PeterYangYT",
+      "favorite": false,
+      "published": "2026-11-11T14:00:17+00:00",
+      "views": 7299,
+      "likes": 100,
+      "description": "This video is sponsored by Anthropic but opinions are my own.\n\nTry Claude Code with Fable and Opus here: http://clau.de/PeterYangYT\n\nWith the launch of Fable 5.2, Anthropic now has the two best models in the world (Opus 5.5 is the other one). I've spent 500+ hours using both mode",
+      "score": 49,
+      "outperforming": false,
+      "relPerf": 0.51,
+      "why": ""
+    },
+    {
       "id": "KzS5Qs7vSMg",
       "title": "A UGC masterclass from the 22-year-old who built Wispr Flow’s growth machine | Hector Serrano",
       "url": "https://www.youtube.com/watch?v=KzS5Qs7vSMg",
@@ -680,23 +680,6 @@
       "score": 48,
       "outperforming": false,
       "relPerf": 1,
-      "why": ""
-    },
-    {
-      "id": "fAkm3YQg73s",
-      "title": "When To Use Fable 5.2 or Opus in Claude Code (Full Tutorial)",
-      "url": "https://www.youtube.com/watch?v=fAkm3YQg73s",
-      "thumbnail": "https://i.ytimg.com/vi/fAkm3YQg73s/mqdefault.jpg",
-      "channel": "Peter Yang",
-      "channelHandle": "PeterYangYT",
-      "favorite": false,
-      "published": "2026-11-11T14:00:17+00:00",
-      "views": 7073,
-      "likes": 90,
-      "description": "This video is sponsored by Anthropic but opinions are my own.\n\nTry Claude Code with Fable and Opus here: http://clau.de/PeterYangYT\n\nWith the launch of Fable 5.2, Anthropic now has the two best models in the world (Opus 5.5 is the other one). I've spent 500+ hours using both mode",
-      "score": 48,
-      "outperforming": false,
-      "relPerf": 0.52,
       "why": ""
     },
     {
@@ -748,6 +731,23 @@
       "score": 43,
       "outperforming": false,
       "relPerf": 0.47,
+      "why": ""
+    },
+    {
+      "id": "y1-9yeYLJUo",
+      "title": "Grok Bot: What Changes When You Can Build AI Teammates",
+      "url": "https://www.youtube.com/watch?v=y1-9yeYLJUo",
+      "thumbnail": "https://i.ytimg.com/vi/y1-9yeYLJUo/mqdefault.jpg",
+      "channel": "Y Combinator",
+      "channelHandle": "ycombinator",
+      "favorite": false,
+      "published": "2026-11-14T23:21:16+00:00",
+      "views": 474,
+      "likes": 24,
+      "description": "Lauren Tan and Roman Ugarte join this episode of the Lightcone to go in deep on how they built and deployed Grok Bot. They explain how automated tests and codebase guardrails help agents check their own work, why bots should earn broader access over time, and why faster and cheap",
+      "score": 43,
+      "outperforming": false,
+      "relPerf": 0.07,
       "why": ""
     },
     {
