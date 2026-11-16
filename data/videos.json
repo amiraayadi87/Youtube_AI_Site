@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15T21:05:21.060Z",
+  "updated": "2026-11-16T06:44:02.486Z",
   "maxAgeDays": 14,
   "videos": [
     {
@@ -34,23 +34,6 @@
       "score": 88,
       "outperforming": true,
       "relPerf": 5.2,
-      "why": ""
-    },
-    {
-      "id": "8c6JZ18W0Bo",
-      "title": "THE world's shortest Claude Code course (5 mins)",
-      "url": "https://www.youtube.com/watch?v=8c6JZ18W0Bo",
-      "thumbnail": "https://i.ytimg.com/vi/8c6JZ18W0Bo/mqdefault.jpg",
-      "channel": "Nick Saraev",
-      "channelHandle": "nicksaraev",
-      "favorite": true,
-      "published": "2026-11-01T21:43:00+00:00",
-      "views": 340955,
-      "likes": 8786,
-      "description": "🔥 Join Maker School & get customer #1 guaranteed: https://go.nicksaraev.com/worlds-shortest-claude\n💎 Get all course resources 100% free: https://go.nicksaraev.com/worlds-shortest-claude-2\n➡️ If this is your first video: I'm Nick Saraev. I run LeftClick, an AI growth agency. We'",
-      "score": 84,
-      "outperforming": true,
-      "relPerf": 2.47,
       "why": ""
     },
     {
